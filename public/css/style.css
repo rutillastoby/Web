@@ -1,0 +1,175 @@
+/*---------------------------------------------------------------
+| Estilo especifico para la web                                 |
+| @rutillastoby                                                 |
+---------------------------------------------------------------*/
+
+/* GENERAL */
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px!important;
+    box-sizing: border-box;
+}
+div{
+    box-sizing: border-box;
+}
+#contentIndex{
+    top:20%;
+    margin-bottom: 100px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/**************************************************************/
+/*                         INDEX                              */
+/**************************************************************/
+
+/* LOGOTIPO INDEX*/
+#containerPano{
+    background-color: black;
+    width: 20%;
+    padding-top: 20%; /* 1:1 Aspect Ratio */
+    /*Centrar*/
+    left: 50%;
+    transform: translate(-50%, -4px);
+}
+#pano{
+    height: 100%;
+    top:0;
+}
+#logoIndex{
+    width: 25%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+/* MENU INDEX */
+#menuIndex{
+    margin-top: 70px;
+}
+#titleTop{
+    transform: translate(0%, -150%);
+    font-size: 25px;
+}
+#menuIndex{
+    text-align: center;
+}
+#menuIndex .option{
+    font-weight: 700;
+    color:rgb(219, 219, 219);
+    fill: rgb(219, 219, 219);
+    width: 12%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    /*Transicion*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+#menuIndex .option svg{
+    width:25px;
+    margin-bottom: 5px;
+}
+#menuIndex .miniFont{
+    font-size: 12px;
+}
+#menuIndex .option .nameOption{
+    width:100%;
+}
+
+/* Colores hover*/
+#weOption:hover{
+    color:black;
+    fill:black;
+}
+#zoaOption:hover{
+    color:#ffee00;
+    fill:#ffee00;
+}
+#walterOption:hover{
+    color:#97ce08;
+    fill:#97ce08;
+}
+#contactOption:hover{
+    color:#b60b5b;
+    fill:#b60b5b;
+}
+
+
+/**************************************************************/
+/*                        GENERICO                            */
+/**************************************************************/
+
+/* CONTENIDO GENERICO */
+#contentGeneric{
+    top:70px;
+    z-index: 1;
+}
+
+/* CABECERA GENERICA */
+#genericHeader{
+    height: 70px;
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(196, 196, 196, 0.75);
+    -moz-box-shadow: 0px 4px 7px 0px rgba(196, 196, 196, 0.75);
+    box-shadow: 0px 4px 7px 0px rgba(196, 196, 196, 0.75);
+    background-color: white;
+    z-index: 10;
+}
+#genericHeader #logo svg{
+    width: 55px;
+}
+#genericHeader #logo{
+    top:50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+}
+#menuGenericBar{
+    top:50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-weight: bold;
+}
+#menuGenericBar span{
+    color:rgb(87, 87, 87);
+    cursor: pointer;
+}
+#menuGenericBar span:hover{
+    color:black;
+}
+#menuGenericBar .separator{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* MENU PARA MOVILES */
+#popMenu{ 
+    top:70px;
+    right: 0px;
+    width: 70%;
+    background-color: black;
+    height: 100%;
+    padding-top: 20px;
+    z-index: 20;
+    font-weight: 700;
+    /*Transicion*/
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+.popMenuHide{
+    right: -100%!important;
+}
+#popMenu .option{
+    padding: 10px 25px;
+    color: white;
+}
+#menuGenericBar #iconMenu svg{
+    width: 28px;
+    cursor: pointer;
+}

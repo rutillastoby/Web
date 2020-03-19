@@ -1,0 +1,89 @@
+<!-- CABECERA -->
+<div id="genericHeader" class="col100 fixed">
+    <div id="logo" class="relative">
+        <a href="../">
+            <svg viewBox="0 0 1213 882">
+                <path d="M1573,942v516H1357V1308H1069.38L1179,1458H891L720,1224V1008h36a108,108,0,0,0,0-216H360V576H846c169,0,306,137,306,306a305,305,0,0,1-83.43,210H1357V942Z" transform="translate(-360 -576)"/>
+            </svg>
+        </a>
+    </div>
+    <div id="menuGenericBar" class="absolute">
+        <div id="options">
+            <a href="../descubre/"><span>Descubre</span><span class="separator">|</span></a>
+            <a href="../zoa"><span>Zoa</span><span class="separator">|</span></a>
+            <a href="#"><span>Walter</span><span class="separator">|</span></a>
+            <a href="../contacto"><span>Contacto</span></a>
+        </div>
+        <div id="iconMenu" class="hidden">
+            <svg id="mIcon" viewBox="0 0 16 16" fill="#000">
+                <path d="M0 1h16v3h-16v-3z"></path>
+                <path d="M0 6h16v3h-16v-3z"></path>
+                <path d="M0 11h16v3h-16v-3z"></path>
+            </svg>  
+            <svg id="cIcon" viewBox="0 0 386.667 386.667" class="hidden">
+                <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<!-- MENU PARA DISPOSITIVOS MOVILES -->
+<div id="popMenu" class="fixed popMenuHide">
+    <a href="../descubre/">
+        <div class="option col100">
+            <span>Descubre</span>
+        </div>
+    </a>
+   
+    <a href="../zoa">
+        <div class="option col100">
+            <span>Zoa</span>
+        </div>
+    </a>
+
+    <a>
+        <div class="option col100">
+            <span>Walter</span>
+        </div>
+    </a>
+
+    <a href="../contacto">
+        <div class="option col100">
+            <span>Contacto</span>
+        </div>
+    </a>
+</div>
+
+<script>
+    $( document ).ready(function() {
+        var openMenu=false;
+        /* 
+        * Boton de menu 
+        */
+        $("#iconMenu").on("click", function(){
+            if(openMenu){
+                $("#mIcon").show();
+                $("#cIcon").hide();
+                $("#popMenu").addClass("popMenuHide");
+            }else{
+                $("#mIcon").hide();
+                $("#cIcon").show();
+                $("#popMenu").removeClass("popMenuHide");
+            }
+            openMenu=!openMenu;
+        });
+
+        /*
+        * Abrir y Cerrar automaticamente menu movil al redimensionar pantalla
+        */
+        $( window ).resize(function() {
+            if($( window ).width()>650){
+                $("#popMenu").addClass("popMenuHide");
+            }else{
+                if(openMenu){
+                    $("#popMenu").removeClass("popMenuHide");
+                }
+            };
+        });
+    });
+</script>

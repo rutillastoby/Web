@@ -1,0 +1,59 @@
+/*---------------------------------------------------------------
+| Diseño responsivo                                             |
+| @rutillastoby                                                 |
+---------------------------------------------------------------*/
+
+/**************************************************************/
+/*                         MOVIL                              */
+/**************************************************************/
+@media only screen and (max-width: 650px) {
+    /* Index */
+    #logoIndex{
+        width: 65%;
+    }
+    #containerPano{
+        width: 60%;
+        padding-top: 60%;
+    }
+    #contentIndex{
+        top:10%;
+    }
+    #menuIndex .option{
+        width: 30%;
+        margin-top: 17px;
+    }
+    #contactOption, #zoaOption{
+        margin-right:10%;
+    }
+    #weOption, #walterOption{
+        margin-left:10%;
+    }
+
+    /* Cabecera generica */
+    #menuGenericBar #iconMenu{
+        display: block;   
+    }
+    #menuGenericBar #options{
+        display: none;
+    }
+}
+
+/**************************************************************/
+/*                        TABLETS                             */
+/**************************************************************/
+@media only screen and (min-width: 651px) and (max-width: 850px) {
+    /* Index */
+    #logoIndex{
+        width: 40%;
+    }
+    #containerPano{
+        width: 35%;
+        padding-top: 35%;
+    }
+    #contentIndex{
+        top:15%;
+    }
+    #menuIndex .option{
+        width: 20%;
+    }
+}

@@ -1,88 +1,142 @@
 <html>
-    <?php include 'head.html'; ?>
+        <?php include 'public/head.html'; ?>
+        <link rel="stylesheet" type="text/css" href="public/css/global.css">
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="public/css/responsive.css">
+    </head>
     <body>
-        <span id="titleTop" class="">Rutillas Toby</span>
-        <!-- Logo -->
-        <svg id="logoIndex" viewBox="0 0 1920 1920">
-            <path fill="white" d="M0,0V1920H1920V0ZM1668.39,1475.07H1415.94v-175.3H1079.79l128.12,175.3H871.32L671.47,1201.59V949.15h42.07a126.23,126.23,0,0,0,0-252.45H250.73V444.26h568c197.52,0,357.63,160.11,357.63,357.63a356.48,356.48,0,0,1-97.5,245.43h337.09V872h252.45Z"/>
-        </svg>
-        <div id="containerBack"> 
-            <div id="pano"></div>
+        <div id="contentIndex" class="width100 absolute">
+                <!-- Logo -->
+                <div id="containerPano" class="l1 relative"> 
+                    <div id="pano" class="absolute width100"></div>
+                </div>      
+     
+                <svg id="logoIndex" class="absolute l2" viewBox="0 0 1920 1920">
+                    <path fill="white" d="M576.58,1707.19q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm337.86,41.16q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm0,0q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm-337.86-41.16q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm337.86,41.16q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm0,0q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm-337.86-41.16q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm337.86,41.16q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm282.17-20.15a17.16,17.16,0,0,0-13-5.35,17.38,17.38,0,0,0-13.08,5.35q-5.15,5.35-5.15,14.34t5.15,14.33a17.38,17.38,0,0,0,13.08,5.35,17.16,17.16,0,0,0,13-5.35q5.09-5.34,5.09-14.33T1196.61,1728.2Zm91.17,0a18.51,18.51,0,0,0-26,0q-5.09,5.35-5.09,14.34t5.09,14.33a18.51,18.51,0,0,0,26,0q5.09-5.34,5.09-14.33T1287.78,1728.2Zm0,0a18.51,18.51,0,0,0-26,0q-5.09,5.35-5.09,14.34t5.09,14.33a18.51,18.51,0,0,0,26,0q5.09-5.34,5.09-14.33T1287.78,1728.2Zm-91.17,0a17.16,17.16,0,0,0-13-5.35,17.38,17.38,0,0,0-13.08,5.35q-5.15,5.35-5.15,14.34t5.15,14.33a17.38,17.38,0,0,0,13.08,5.35,17.16,17.16,0,0,0,13-5.35q5.09-5.34,5.09-14.33T1196.61,1728.2Zm-282.17,20.15q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm-337.86-41.16q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19ZM0,0V1920H1920V0ZM582,1778.08l-17.84-25.77H544.47v25.77H523.06v-92.49h40q12.28,0,21.34,4.09a30.61,30.61,0,0,1,18.83,29.47,30.11,30.11,0,0,1-19,29.2L605,1778.08Zm108.34,0H670.79v-8.46a27.24,27.24,0,0,1-9.78,7.07,30.75,30.75,0,0,1-12.29,2.45q-14,0-22.2-8.06t-8.19-23.92V1707h20.61v37.13q0,17.18,14.41,17.18a15.51,15.51,0,0,0,11.89-4.82q4.49-4.83,4.49-14.34V1707h20.61Zm57.55-.07a37.71,37.71,0,0,1-9.32,1.13q-12.68,0-19.62-6.48t-6.94-19v-29.21h-11v-15.85h11v-17.31h20.62v17.31h17.7v15.85h-17.7v28.94q0,4.5,2.31,6.94a8.56,8.56,0,0,0,6.54,2.44,13.24,13.24,0,0,0,8.32-2.64l5.55,14.54A21.09,21.09,0,0,1,747.89,1778Zm39.7.07H767V1707h20.61Zm-1.05-84.37a12.92,12.92,0,0,1-9.25,3.37,13.08,13.08,0,0,1-9.25-3.3,11.19,11.19,0,0,1,0-16.39,13.08,13.08,0,0,1,9.25-3.3,13.44,13.44,0,0,1,9.25,3.17,10.18,10.18,0,0,1,3.57,7.93A11.19,11.19,0,0,1,786.54,1693.71Zm40.83,84.37H806.75v-98h20.62Zm39.77,0H846.53v-98h20.61Zm82.05,0H929.9v-8.85q-5.82,9.9-21.67,9.91a33.59,33.59,0,0,1-14.2-2.78,21.21,21.21,0,0,1-9.19-7.66,20,20,0,0,1-3.17-11.1q0-9.91,7.47-15.59t23.05-5.68h16.39c0-4.5-1.37-7.95-4.1-10.38s-6.82-3.63-12.29-3.63A35.83,35.83,0,0,0,901,1724.1a29.52,29.52,0,0,0-9.32,4.83l-7.4-14.41a44.79,44.79,0,0,1,14-6.34,62.25,62.25,0,0,1,16.71-2.25q16.51,0,25.37,7.87t8.85,23.72Zm72.15-9.78a25.39,25.39,0,0,1-11.56,8,51.64,51.64,0,0,1-18,2.84,69.24,69.24,0,0,1-17.31-2.18,45.21,45.21,0,0,1-13.48-5.49l6.87-14.79a43.58,43.58,0,0,0,11.5,5,48,48,0,0,0,13.21,1.92q13.08,0,13.08-6.48c0-2-1.19-3.48-3.56-4.36a53.19,53.19,0,0,0-11-2.25,106.62,106.62,0,0,1-14.41-3,22.52,22.52,0,0,1-9.84-6.08q-4.16-4.36-4.16-12.42a19.44,19.44,0,0,1,3.9-12,25,25,0,0,1,11.36-8.13,48.72,48.72,0,0,1,17.64-2.91,69.36,69.36,0,0,1,15,1.66,41.88,41.88,0,0,1,12.35,4.56l-6.87,14.66a41,41,0,0,0-20.48-5.28c-4.41,0-7.71.61-9.91,1.85s-3.3,2.82-3.3,4.75q0,3.31,3.56,4.63a63.08,63.08,0,0,0,11.37,2.51,122.39,122.39,0,0,1,14.27,3.1,21.48,21.48,0,0,1,9.64,6c2.73,2.9,4.1,7,4.1,12.15A18.76,18.76,0,0,1,1021.34,1768.3Zm96.06,9.78H1096v-75h-29.6v-17.44H1147V1703H1117.4Zm100.15-16.65a35,35,0,0,1-13.87,13,45.48,45.48,0,0,1-40.23,0,34.92,34.92,0,0,1-14-13,38.07,38.07,0,0,1,0-37.79,34.82,34.82,0,0,1,14-13,45.39,45.39,0,0,1,40.23,0,34.93,34.93,0,0,1,13.87,13,38.07,38.07,0,0,1,0,37.79Zm91.57.33a32.68,32.68,0,0,1-12.75,12.82,36.23,36.23,0,0,1-18,4.56q-14.65,0-22.33-9.25v8.19h-19.68v-98h20.61v34.48q7.8-8.58,21.4-8.59a36.23,36.23,0,0,1,18,4.56,32.74,32.74,0,0,1,12.75,12.82,42.23,42.23,0,0,1,0,38.45Zm54.84,20.68q-4.89,12.29-12.09,17.31t-17.38,5a36,36,0,0,1-11-1.72,24.22,24.22,0,0,1-8.85-4.75l7.53-14.67a17.59,17.59,0,0,0,5.49,3.3,16.86,16.86,0,0,0,6.14,1.19,10.86,10.86,0,0,0,6.87-2,17.36,17.36,0,0,0,4.76-6.8l.26-.66L1314.93,1707h21.28l20,48.23,20.09-48.23h19.82Zm304.43-307.37H1415.94v-175.3H1079.79l128.12,175.3H871.32L671.47,1201.59V949.15h42.07a126.23,126.23,0,0,0,0-252.45H250.73V444.26h568c197.52,0,357.63,160.11,357.63,357.63a356.48,356.48,0,0,1-97.5,245.43H1416V872H1668.4Zm-393.62,247.78a17.16,17.16,0,0,0-13,5.35q-5.09,5.35-5.09,14.34t5.09,14.33a18.51,18.51,0,0,0,26,0q5.09-5.34,5.09-14.33t-5.09-14.34A17.15,17.15,0,0,0,1274.77,1722.85Zm-91.18,0a17.38,17.38,0,0,0-13.08,5.35q-5.15,5.35-5.15,14.34t5.15,14.33a17.38,17.38,0,0,0,13.08,5.35,17.16,17.16,0,0,0,13-5.35q5.09-5.34,5.09-14.33t-5.09-14.34A17.16,17.16,0,0,0,1183.59,1722.85Zm-281.83,33.83a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27H914.44Q901.75,1748.35,901.76,1756.68Zm-325.18-49.49q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm337.86,41.16q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm282.17-20.15a17.16,17.16,0,0,0-13-5.35,17.38,17.38,0,0,0-13.08,5.35q-5.15,5.35-5.15,14.34t5.15,14.33a17.38,17.38,0,0,0,13.08,5.35,17.16,17.16,0,0,0,13-5.35q5.09-5.34,5.09-14.33T1196.61,1728.2Zm0,0a17.16,17.16,0,0,0-13-5.35,17.38,17.38,0,0,0-13.08,5.35q-5.15,5.35-5.15,14.34t5.15,14.33a17.38,17.38,0,0,0,13.08,5.35,17.16,17.16,0,0,0,13-5.35q5.09-5.34,5.09-14.33T1196.61,1728.2Zm-282.17,20.15q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm-337.86-41.16q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm337.86,41.16q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm0,0q-12.69,0-12.68,8.33a7.4,7.4,0,0,0,3.1,6.27q3.1,2.31,8.52,2.31a18,18,0,0,0,9.39-2.44,13.44,13.44,0,0,0,5.81-7.2v-7.27Zm-337.86-41.16q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Zm0,0q-5-4.15-14.67-4.16H544.47v32.24h17.44q9.65,0,14.67-4.23t5-11.89Q581.6,1711.35,576.58,1707.19Z"/>
+                </svg>
+
+                <!-- MENU ESCRITORIO -->
+                <div id="menuIndex" class="relative width100 l2">
+                    <a href="descubre">
+                        <div id="weOption" class="option">
+                            <svg viewBox="0 0 469.333 469.333" style="width:30px;">
+                                <path d="M234.667,170.667c-35.307,0-64,28.693-64,64s28.693,64,64,64s64-28.693,64-64S269.973,170.667,234.667,170.667z"/>
+                                <path d="M234.667,74.667C128,74.667,36.907,141.013,0,234.667c36.907,93.653,128,160,234.667,160
+                                    c106.773,0,197.76-66.347,234.667-160C432.427,141.013,341.44,74.667,234.667,74.667z M234.667,341.333
+                                    c-58.88,0-106.667-47.787-106.667-106.667S175.787,128,234.667,128s106.667,47.787,106.667,106.667
+                                    S293.547,341.333,234.667,341.333z"/>
+                            </svg>
+                            <div class="nameOption">Descubre</div>
+                        </div>
+                    </a>
+
+                    <a href="zoa/">
+                        <div id="zoaOption" class="option">
+                            <svg viewBox="0 0 1484 1484">
+                                <path d="M932.51,276.5C535.44,291,218,617.64,218,1018.5v742H987.49C1384.56,1746,1702,1419.36,1702,1018.5v-742ZM960,1415.77c-219.26,0-397-177.87-397-397.27S740.74,621.23,960,621.23s397,177.87,397,397.27S1179.26,1415.77,960,1415.77Z" transform="translate(-218 -276.5)"/>
+                            </svg>
+                            <div class="nameOption">Zoa</div>
+                        </div>
+                    </a>
+
+                    <a>
+                        <div id="walterOption" class="option">
+                            <svg viewBox="0 0 444.33069 592.58197">
+                                <g transform="translate(142.86869,258.92533)">
+                                    <g transform="translate(-316.52001,140.41563)">
+                                        <path d="M 321.73335,45.095577 V -103.04989 l -74.04101,-0.0212 -74.04102,-0.0212 148.12435,-148.12434 148.12434,-148.12433 v 148.14545 148.14544 l 74.04101,0.0212 74.041,0.0212 L 469.85771,45.116647 321.73335,193.24098 Z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="nameOption">Walter <span class="miniFont">(próx.)</span></div>
+                        </div>
+                    </a>
+
+                    <a href="contacto/">
+                        <div id="contactOption" class="option">
+                            <svg viewBox="0 0 510 510">
+                                <path d="M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z"/>
+                            </svg>
+                            <div class="nameOption">Contacto</div>
+                        </div>
+                    </a>
+                </div>            
         </div>
-        <!-- Menu -->
         
         <!-- MARZIPANO -->
-        <script src="js/marzipano/es5-shim.js"></script>
-        <script src="js/marzipano/eventShim.js"></script>
-        <script src="js/marzipano/requestAnimationFrame.js"></script>
-        <script src="js/marzipano/marzipano.js"></script>
-        <script src="js/marzipano/DeviceOrientationControlMethod.js"></script>
-
+        <script src="public/js/marzipano/es5-shim.js"></script>
+        <script src="public/js/marzipano/eventShim.js"></script>
+        <script src="public/js/marzipano/requestAnimationFrame.js"></script>
+        <script src="public/js/marzipano/marzipano.js"></script>
+        <script src="public/js/marzipano/DeviceOrientationControlMethod.js"></script>
         <script>
-            ///////////////////////////////////////////////////////////////////////////
-            ///////////////////////////   MARZIPANO   /////////////////////////////////
-            ///////////////////////////////////////////////////////////////////////////
-            'use strict';
-            //1. VISOR DE IMAGENES
-            var panoElement = document.getElementById('pano');
-            /* Progresive controla que los niveles de resolución se cargan en orden, de menor 
-            a mayor, para conseguir una carga mas fluida. */
-            var viewer =  new Marzipano.Viewer(panoElement, {stage: {progressive: true}}); 
+            $( document ).ready(function() {
+                //////////////// Marzipano ///////////////
+                'use strict';
+                //0. IMAGEN DE FONDO ALEATORIA
+                var dir= -1;
+                var min=1;
+                var max=6;
+                dir = parseInt(Math.random() * (max - min) + min); //min (incluido) y max (excluido)
 
-            // Register the custom control method.
-            var deviceOrientationControlMethod = new DeviceOrientationControlMethod();
-            var controls = viewer.controls();
-            controls.registerMethod('deviceOrientation', deviceOrientationControlMethod);
+                //1. VISOR DE IMAGENES
+                var panoElement = document.getElementById('pano');
+                /* Progresive controla que los niveles de resolución se cargan en orden, de menor 
+                a mayor, para conseguir una carga mas fluida. */
+                var viewer =  new Marzipano.Viewer(panoElement, {stage: {progressive: true}}); 
+                // Orientacion con inclinacion del dispositivo (giroscopio)
+                var deviceOrientationControlMethod = new DeviceOrientationControlMethod();
+                var controls = viewer.controls();
+                controls.registerMethod('deviceOrientation', deviceOrientationControlMethod);
 
-            //2. RECURSO
-            var source = Marzipano.ImageUrlSource.fromString("img/2/{z}/{f}/{y}/{x}.jpg",           
-            {cubeMapPreviewUrl: "img/2/preview.jpg", 
-            cubeMapPreviewFaceOrder: 'bdflru'});//(bdflru para establecer el orden de la capas de la imagen de preview)
+                //2. RECURSO
+                var source = Marzipano.ImageUrlSource.fromString("public/img/360/"+dir+"/{z}/{f}/{y}/{x}.jpg",           
+                {cubeMapPreviewUrl: "public/img/360/"+dir+"/preview.jpg", 
+                cubeMapPreviewFaceOrder: 'bdflru'});//(bdflru para establecer el orden de la capas de la imagen de preview)
 
-            //3. GEOMETRIA 
-            var geometry = new Marzipano.CubeGeometry([
-            { tileSize: 256, size: 256, fallbackOnly: true  },
-            { tileSize: 512, size: 512 },
-            { tileSize: 512, size: 1024 },
-            { tileSize: 512, size: 2048},
-            ]);
+                //3. GEOMETRIA 
+                var geometry = new Marzipano.CubeGeometry([
+                { tileSize: 256, size: 256, fallbackOnly: true  },
+                { tileSize: 512, size: 512 },
+                { tileSize: 512, size: 1024 },
+                { tileSize: 512, size: 2048},
+                ]);
 
-            //4. VISTA
-            //Limitadores de zoom min y max para vista vertical y horizontal
-            var limiter = Marzipano.util.compose(
-                Marzipano.RectilinearView.limit.vfov(1.898131111111111, 1.898131111111111),
-                Marzipano.RectilinearView.limit.hfov(1.898131111111111, 1.898131111111111)
-            );
-            //Establecer estado inicial de la vista con el primer parametro
-            var view = new Marzipano.RectilinearView({yaw: -1, pitch: 0, roll: 0, fov: Math.PI}, limiter);
+                //4. VISTA
+                //Limitadores de zoom min y max para vista vertical y horizontal
+                var limiter = Marzipano.util.compose(
+                    Marzipano.RectilinearView.limit.vfov(1.898131111111111, 1.898131111111111),
+                    Marzipano.RectilinearView.limit.hfov(1.898131111111111, 1.898131111111111)
+                );
+                //Establecer estado inicial de la vista con el primer parametro
+                var view = new Marzipano.RectilinearView({yaw: -1, pitch: 0, roll: 0, fov: Math.PI}, limiter);
 
-            //5. ESCENA SOBRE EL VISOR
-            var scene = viewer.createScene({
-                source: source,
-                geometry: geometry,
-                view: view,
-                pinFirstLevel: true
+                //5. ESCENA SOBRE EL VISOR
+                var scene = viewer.createScene({
+                    source: source,
+                    geometry: geometry,
+                    view: view,
+                    pinFirstLevel: true
+                });
+
+                //6.MOSTAR
+                scene.switchTo({ transitionDuration: 2000 });
+
+                //7. AUTOROTACION
+                var autorotate = Marzipano.autorotate({
+                    yawSpeed: 0.1,         // Yaw rotation speed
+                    targetPitch: 0,        // Pitch value to converge to
+                    targetFov: Math.PI/2   // Fov value to converge to
+                });
+                // Movimiento infinito
+                viewer.setIdleMovement(Infinity);
+                // Empezar rotacion
+                viewer.startMovement(autorotate); 
+                
+                //8. MOVIMIENTO CON ORIENTACION DISPOSITIVO
+                deviceOrientationControlMethod.getPitch(function(err, pitch) {});
+                controls.enableMethod('deviceOrientation');
             });
-
-            //6.MOSTAR
-            scene.switchTo({ transitionDuration: 2000 });
-
-            //7. AUTOROTACION
-            var autorotate = Marzipano.autorotate({
-                yawSpeed: 0.1,         // Yaw rotation speed
-                targetPitch: 0,        // Pitch value to converge to
-                targetFov: Math.PI/2   // Fov value to converge to
-            });
-            // Movimiento infinito
-            viewer.setIdleMovement(Infinity);
-            // Empezar rotacion
-            viewer.startMovement(autorotate); 
-
-           
-
-            deviceOrientationControlMethod.getPitch(function(err, pitch) {});
-            controls.enableMethod('deviceOrientation');
         </script>
     </body>
 </html>
-
