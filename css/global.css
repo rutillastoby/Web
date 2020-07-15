@@ -1,0 +1,13 @@
+/* TAMANNOS */
+.col100{ width: 100%; float: left; }
+.col50{ width: 50%; float: left; }
+.col{float: left;}
+/* POSICIONES */
+.absolute{ position: absolute; }
+.relative{ position: relative; }
+/* CAPAS */
+.capa1{z-index: 100;}
+.capa2{z-index: 90;}
+.capa3{z-index: 80;}
+.capa4{z-index: 70;}
+.capa5{z-index: 60;}

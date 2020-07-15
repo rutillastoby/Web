@@ -1,0 +1,116 @@
+body{
+    margin:0px 80px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CABECERA */
+header{
+    padding-top: 60px;
+    height: 650px;
+}
+#mainLogo svg{
+    width: 100px;
+    fill: white;
+}
+
+#mainSlogan{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#mainSlogan div{
+    height: 4px;
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin: 10px 0px 10px 0px;
+}
+
+#bigSlogan{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* PANORAMA */
+#panoContainer{
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+#pano{
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+#mainWave{
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    fill: white;
+}
+
+/* OTROS */
+.separator{
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+/* SECCIONES PROYECTOS */
+.projectSection{
+    position: relative;
+    width: calc(100% + 160px);
+    left: -80px;
+    padding: 0px 80px;
+}
+
+/* SECCION ZOA */
+#zoaSection{
+    height: 500px;
+    background-color: #ffde00 ;
+}
+
+#zoaLogo{
+    margin-top: 40px;
+    height: 38px;
+}
+
+#zoaSection span{
+    margin-top: 15px;
+    clear: both;
+}
+
+#zoaSection img{
+    position: absolute;
+    right: 0;
+    top: 21px;
+    width: 30%;
+}
+
+#zoaWave{
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    left: 0px;
+    fill: white;
+}
+
+/* SECCION WALTER */
+#walterSection{
+    height: 200px;
+    background-color: black ;
+}
+

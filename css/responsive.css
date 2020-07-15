@@ -1,0 +1,57 @@
+/*** TABLET ***/
+@media only screen and (min-width: 651px) and (max-width: 850px) {
+    body{
+        margin:0px 60px;
+    }
+
+    #mainLogo svg {
+        width: 80px;
+    }
+
+    header{
+        padding-top: 50px;
+    }
+
+    header, #panoContainer{
+        height: 550px;
+    }
+
+    #mainSlogan{
+        top: 50%;
+    }
+
+    .projectSection{
+        width: calc(100% + 120px);
+        left: -60px;
+        padding: 0px 60px;
+    }
+}
+
+/*** MOVIL ***/
+@media only screen and (max-width: 650px) {
+    body{
+        margin:0px 30px;
+    }
+
+    #mainLogo svg {
+        width: 60px;
+    }
+
+    header{
+        padding-top: 40px;
+    }
+
+    header, #panoContainer{
+        height: 500px;
+    }
+
+    #mainSlogan{
+        top: 53%;
+    }
+
+    .projectSection{
+        width: calc(100% + 60px);
+        left: -30px;
+        padding: 0px 30px;
+    }
+}
