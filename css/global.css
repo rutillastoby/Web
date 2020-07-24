@@ -1,13 +1,121 @@
 /* TAMANNOS */
 .col100{ width: 100%; float: left; }
 .col50{ width: 50%; float: left; }
+.col25{ width: 25%; float: left; }
 .col{float: left;}
+
+/* MARGENES */
+.lMarginT{
+    margin-top: 25px;
+}
+
+.lMarginB{
+    margin-bottom: 25px;
+}
+
+.xlMarginTB{
+    margin:70px 0px 70px 0px;
+}
+
 /* POSICIONES */
 .absolute{ position: absolute; }
 .relative{ position: relative; }
+
 /* CAPAS */
 .capa1{z-index: 100;}
 .capa2{z-index: 90;}
 .capa3{z-index: 80;}
 .capa4{z-index: 70;}
 .capa5{z-index: 60;}
+
+/* OTROS */
+.otherLineFloat{clear: both;}
+.strong{font-weight: 700;}
+.justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* CENTRADO */
+.childFlexAllHeight{ 
+    display: flex;
+    align-items: stretch; 
+    /*Los elementos hijos se ajustan en altura al 100% del padre*/ 
+}
+.flexCenterH {
+    display: flex;
+    justify-content: center;
+}
+.flexCenterV {
+    display: flex;
+    align-items: center;
+}
+.flexCenterHV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******** GLOBAL MOVIL ********/
+@media only screen and (max-width: 750px) {
+
+    /* TAMANNOS */
+    .col100-mv{ width: 100%!important; }
+    .col50-mv{ width: 50%!important; }
+
+    /* MARGENES */
+    .sMarginT-mv{
+        margin-top: 8px;
+    }
+    .mMarginT-mv{
+        margin-top: 15px;
+    }
+    .lMarginT-mv{
+        margin-top: 25px;
+    }
+    .xlMarginT-mv{
+        margin-top: 40px;
+    }
+
+    .nMarginB-mv{
+        margin-bottom: 0px;
+    }
+    .sMarginB-mv{  
+        margin-bottom: 15px;
+    }
+    .mMarginB-mv{  
+        margin-bottom: 15px;
+    }
+    .lMarginTB-mv{
+        margin:25px 0px 25px 0px;
+    }
+    
+
+    /* OTROS */
+    .displayBlock-mv{
+        display: block;
+    }
+}
+
+/******** GLOBAL TABLET ********/
+@media only screen and (min-width: 751px) and (max-width: 1300px) {
+    /* TAMANNOS */
+    .col100-tb{ width: 100%!important; }
+    .col50-tb{ width: 50%!important; }
+    
+    /* MARGENES */
+    .sMarginT-tb{
+        margin-top: 8px;
+    }
+    .mMarginT-tb{
+        margin-top: 15px;
+    }
+    .lMarginTB-tb{
+        margin:25px 0px 25px 0px;
+    }
+
+    /* OTROS */
+    .displayBlock-tb{
+        display: block;
+    }
+}

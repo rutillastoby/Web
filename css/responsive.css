@@ -1,5 +1,5 @@
 /*** TABLET ***/
-@media only screen and (min-width: 651px) and (max-width: 850px) {
+@media only screen and (min-width: 751px) and (max-width: 1300px) {
     body{
         margin:0px 60px;
     }
@@ -25,10 +25,19 @@
         left: -60px;
         padding: 0px 60px;
     }
+
+    img.decorationImage{
+        width: 45%;
+        right: 0px;
+    }
+
+    .getOnGooglePlay{
+        width: 65%;
+    }
 }
 
 /*** MOVIL ***/
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
     body{
         margin:0px 30px;
     }
@@ -53,5 +62,18 @@
         width: calc(100% + 60px);
         left: -30px;
         padding: 0px 30px;
+    }
+
+    img.decorationImage{
+        width: 100%;
+        position: static;
+    }
+
+    #zoaSection .buttonSection{
+        display: block;
+    }
+
+    .getOnGooglePlay{
+        width: 52%;
     }
 }
