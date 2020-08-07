@@ -1,5 +1,5 @@
 /*** TABLET ***/
-@media only screen and (min-width: 751px) and (max-width: 1300px) {
+@media only screen and (min-width: 801px) and (max-width: 1400px) {
     body{
         margin:0px 60px;
     }
@@ -27,8 +27,8 @@
     }
 
     img.decorationImage{
-        width: 45%;
-        right: 0px;
+        width: 40%;
+        right: 20px;
     }
 
     .getOnGooglePlay{
@@ -37,7 +37,7 @@
 }
 
 /*** MOVIL ***/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     body{
         margin:0px 30px;
     }

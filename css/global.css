@@ -1,10 +1,18 @@
 /* TAMANNOS */
 .col100{ width: 100%; float: left; }
 .col50{ width: 50%; float: left; }
+.col33{ width: 33.333%; float: left; }
 .col25{ width: 25%; float: left; }
 .col{float: left;}
 
 /* MARGENES */
+
+.sMarginT{
+    margin-top: 8px;
+}
+.mMarginT{
+    margin-top: 15px;
+}
 .lMarginT{
     margin-top: 25px;
 }
@@ -15,6 +23,10 @@
 
 .xlMarginTB{
     margin:70px 0px 70px 0px;
+}
+
+.xxlMarginTB{
+    margin:160px 0px 160px 0px;
 }
 
 /* POSICIONES */
@@ -34,6 +46,9 @@
 .justify{
     text-align: justify;
     text-justify: inter-word;
+}
+.textWhite{
+    color: white;
 }
 
 /* CENTRADO */
@@ -57,7 +72,7 @@
 }
 
 /******** GLOBAL MOVIL ********/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
 
     /* TAMANNOS */
     .col100-mv{ width: 100%!important; }
@@ -98,7 +113,7 @@
 }
 
 /******** GLOBAL TABLET ********/
-@media only screen and (min-width: 751px) and (max-width: 1300px) {
+@media only screen and (min-width: 801px) and (max-width: 1400px) {
     /* TAMANNOS */
     .col100-tb{ width: 100%!important; }
     .col50-tb{ width: 50%!important; }

@@ -1,5 +1,7 @@
 body{
     margin:0px 80px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 *{
@@ -79,14 +81,15 @@ header{
     padding: 0px 80px;
 }
 
+.logoSection{
+    margin-top: 60px;
+    height: 38px;
+}
+
+
 /* SECCION ZOA */
 #zoaSection{
     background-color: #ffde00 ;
-}
-
-#zoaLogo{
-    margin-top: 40px;
-    height: 38px;
 }
 
 img.decorationImage{
@@ -94,14 +97,6 @@ img.decorationImage{
     right: 90px;
     bottom: 0px;
     width: 25%;
-}
-
-#zoaWave{
-    position: absolute;
-    width: 100%;
-    top: -2px;
-    left: 0px;
-    fill: white;
 }
 
 #zoaSection .buttonSection{
@@ -114,7 +109,22 @@ img.decorationImage{
 
 /* SECCION WALTER */
 #walterSection{
-    height: 200px;
-    background-color: black ;
+    background-color: rgb(0, 0, 0) ;
+}
+
+
+/* CONTACTO */
+
+.contactElement svg{
+    width: 50px;
+    margin-top:40px;
+}
+
+.contactContent{
+    margin-top: 8px;
+}
+
+.contactContent span{
+    font-weight: 700;
 }
 
