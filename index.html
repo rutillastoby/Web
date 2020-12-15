@@ -1,294 +1,291 @@
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-        <!-- FUENTE -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
-        <!-- ESTILO -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <!-- JQUERY -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- LINKS MARZIPANO -->
-        <script src="js/pano.js"></script>
-        <script src="js/marzipano/es5-shim.js"></script>
-        <script src="js/marzipano/eventShim.js"></script>
-        <script src="js/marzipano/requestAnimationFrame.js"></script>
-        <script src="js/marzipano/marzipano.js"></script>
-        <script src="js/marzipano/DeviceOrientationControlMethod.js"></script>
-        <!-- LIBRERIA ANIMACION CON SCROLL -->
-        <script src="js/aos.js"></script>
-        <link rel="stylesheet" href="css/aos.css">
+        <title>Rutillas Toby</title>
+        <link rel="stylesheet" href="./css/nav-icon.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="crossorigin="anonymous"></script>
     </head>
-
     <body>
-        <!-- ELEMENTOS DE LA CABECERA -->
-        <header class="capa4 relative">
-            <div id="mainLogo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1213 882">
-                    <path d="M1573,942v516H1357V1308H1069.38L1179,1458H891L720,1224V1008h36a108,108,0,0,0,0-216H360V576H846c169,0,306,137,306,306a305,305,0,0,1-83.43,210H1357V942Z" transform="translate(-360 -576)"/>
-                </svg>
-            </div>
 
-            <div id="mainSlogan">
-                <span id="bigSlogan">DESARROLLO EXCLUSIVO</span>
-                <center><div></div></center>
-                <span id="smallSlogan">Si se desarrolla es porque nos entusiasma</span>
-            </div>
+        <!---- HEADER ---->
+        <header>
+            <div id="topLine"></div>
 
+            <div class="content containerFlex">
+                <div class="containerFlex centerVFlex contentLimits fitContentH">
+                    <svg id="mainLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1213 882">
+                        <path d="M1573,942v516H1357V1308H1069.38L1179,1458H891L720,1224V1008h36a108,108,0,0,0,0-216H360V576H846c169,0,306,137,306,306a305,305,0,0,1-83.43,210H1357V942Z" transform="translate(-360 -576)"/>
+                    </svg>
+                    
+                    <span class="rightFlex"></span>
+                    <span id="menuTitle" class="sMarginR showNone centerVFlex">
+                        MENÚ
+                    </span>
+                    <div id="nav-icon" class="centerVFlex">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>                    
+                </div>
             </div>
         </header>
 
-        <!-- PANORAMA 360 -->
-        <div id="panoContainer" class="capa5">
-            <div id="pano" class="absolute"></div>
-            <!-- OLA DE LA CABECERA -->
-            <svg id="mainWave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 97.1">
-                <g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M0,34.1c722.87,115.45,1253-111,1920-5v68H0Z"/></g></g>
-            </svg>
-            
-        </div>
-
-        <!-- SECCION SOBRE NOSOTROS -->
-
-        <section class="col100">
-            <h1>Rutillas Toby</h1>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam sunt consequatur dolorem nemo repudiandae mollitia consectetur eum ullam placeat accusantium libero, debitis quis voluptates dicta rerum quos veniam accusamus.
-            </span>            
-        </section>
-
-        <!-- SEPARADOR -->
-        <div class="separator col100">
-            <span>/ / / / / / / / / / / / / / / / / / /</span>
-        </div>
-         
-        <!-- SECCION PROYECTOS -->
-
-        <section class="col100">
-            <h1>Proyectos</h1>
-            <span>
-                Algunos proyectos de Rutillas Toby
-            </span>     
-
-            <!-- ZOA -->
-            <section id="zoaSection" class="projectSection col lMarginT">
-                <div class="col100">
-                <svg class="logoSection col" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.86 162.57">
-                    <path d="M476.72,339.66l61.84,162.57H490.25l-8.64-22.63h-63l-8.87,22.63H361.34l63.54-162.57Zm-40.47,94.81h28.19l-13.86-36.6Z" transform="translate(-53.71 -339.66)"/>
-                    <path d="M291.22,339.66a81.29,81.29,0,0,0-81.28,81.28v81.29h81.28a81.3,81.3,0,0,0,81.29-81.29V339.66Zm0,117.44A36.16,36.16,0,1,1,327.38,421,36.16,36.16,0,0,1,291.22,457.1Z" transform="translate(-53.71 -339.66)"/>
-                    <path d="M195.36,339.67,132.15,457.1h63.21v45.13H53.72l63.2-117.44H53.71V339.66Z" transform="translate(-53.71 -339.66)"/>
-                </svg>
-                
-                <span class="col50 col100-mv justify otherLineFloat lMarginT">
-                    Un nuevo tipo de competición.<br><span class="strong">¿El objetivo?</span> Deberás encontrar los códigos a través del mapa de la aplicación y desplazarte hasta ellos. <span class="strong">¿Cómo sumo puntos?</span> Escanea a través de la aplicación el código encontrado para sumar puntos a tu marcador. <span class="strong">¿Y las preguntas?</span> En algunas ocasiones al escanear un código conseguirás desbloquear una pregunta, responder correctamente te hará ganar más puntos.<br><span class="strong">¿La actividad?</span> Cualquiera:
-                </span>
-
-                <div class="col50 col100-mv otherLineFloat">
-                    <div class="activityElement col25 col50-mv lMarginT">
-                        <center>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459 459" width="45px" height=58px>
-                                <path d="M405.45,51c-5.101-15.3-20.4-25.5-35.7-25.5H89.25c-17.85,0-30.6,10.2-35.7,25.5L0,204v204c0,15.3,10.2,25.5,25.5,25.5H51
-                                    c15.3,0,25.5-10.2,25.5-25.5v-25.5h306V408c0,15.3,10.2,25.5,25.5,25.5h25.5c15.3,0,25.5-10.2,25.5-25.5V204L405.45,51z
-                                        M89.25,306C68.85,306,51,288.15,51,267.75s17.85-38.25,38.25-38.25s38.25,17.85,38.25,38.25S109.65,306,89.25,306z M369.75,306
-                                    c-20.4,0-38.25-17.85-38.25-38.25s17.85-38.25,38.25-38.25S408,247.35,408,267.75S390.15,306,369.75,306z M51,178.5L89.25,63.75
-                                    h280.5L408,178.5H51z"/>
-                            </svg>
-                            <br><span class="strong">COCHE</span>
-                        </center>
+        <!----- MENU ----->
+        <div id="menu">
+            <div class="content lPadding containerFlex columnFlex">
+                <div class="xlMarginB">
+                    <div class="containerFlex centerVFlex sMarginL">
+                        <img src="./icons/know.svg">
+                        <strong class="mediumText sMarginL">NOSOTROS</strong>
                     </div>
-                    <div class="activityElement col25 col50-mv lMarginT">
-                        <center>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="58px" height="58px">
-                                <path d="M414.72,192.64l-85.973-85.973h-94.08v42.667h76.587L353.92,192H106.667C46.933,192,0,238.933,0,298.667
-                                    s46.933,106.667,106.667,106.667c52.48,0,94.933-36.053,104.533-85.333h35.2l59.093-59.093c-4.48,11.52-6.827,24.32-6.827,37.76
-                                    c0,59.733,46.933,106.667,106.667,106.667C465.067,405.333,512,358.4,512,298.667C512,242.133,469.973,196.907,414.72,192.64z
-                                        M166.827,320c-8.96,24.533-32.853,42.667-60.16,42.667c-34.773,0-64-29.227-64-64c0-34.773,29.227-64,64-64
-                                    c27.307,0,51.2,18.133,60.16,42.667h-60.16V320H166.827z M405.333,362.667c-35.413,0-64-28.587-64-64s28.587-64,64-64
-                                    s64,28.587,64,64S440.747,362.667,405.333,362.667z"/>
-                            </svg>                            
-                            <br><span class="strong">MOTO</span>
-                        </center>
+
+                    <div class="separator mMarginTB"></div>
+
+                    <div class="containerFlex centerVFlex sMarginL">
+                        <img src="./icons/projects.svg">
+                        <strong class="mediumText sMarginL">PROYECTOS</strong>
+                    
                     </div>
-                    <div class="activityElement col25 col50-mv lMarginT">
-                        <center>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.667 458.667" width="58px" height="52px" style="margin-bottom: 6px;">
-                                <path d="M283.733,85.333c23.467,0,42.667-19.2,42.667-42.667C326.4,19.2,307.2,0,283.733,0s-42.667,19.2-42.667,42.667S260.267,85.333,283.733,85.333z"/>
-                                <path d="M401.067,245.333v-42.667c-39.467,0-73.6-21.333-92.8-52.267L288,116.267C280.533,103.467,266.667,96,251.733,96
-                                    c-5.333,0-10.667,1.067-16,3.2l-112,45.867v100.267H166.4v-71.467l37.333-14.933l-33.067,171.733L66.133,310.4L57.6,352
-                                    c0,0,149.333,28.8,149.333,29.867L227.2,288l45.867,42.667v128h42.667V297.6L272,253.867l12.8-64
-                                    C312.533,224,354.133,245.333,401.067,245.333z"/>
-                            </svg>                            
-                            <br><span class="strong">CAMINAR</span>
-                        </center>
+                    <div class="sMarginT">
+                        <span class="mediumText xlMarginL">L&nbsp;&nbsp;&nbsp;ZOA</span>    
                     </div>
-                    <div class="activityElement col25 col50-mv lMarginT">
-                        <center>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 530.4" width="58px" height="58px">
-                                <path d="M408,40.8a45.9,45.9,0,1,0,45.9,45.9A45.71,45.71,0,0,0,408,40.8Zm77.64,275.41H484.5c-40.09,0-75.36,17.69-98.58,45.84A127.48,127.48,0,0,0,357,443.7a129.59,129.59,0,0,0,9.8,49.84,125.36,125.36,0,0,0,29.68,43.12c22.73,21.51,53.6,34.54,88,34.54,35.52,0,67.26-13.88,90.17-36.64a125.35,125.35,0,0,0,28.67-43.86,130.06,130.06,0,0,0,8.66-47C612,372.68,556.5,316.8,485.64,316.21ZM484.5,525.36a81.66,81.66,0,0,1-81.66-81.66c0-.27,0-.53,0-.8A81.65,81.65,0,0,1,566.11,441c0,.9,0,1.8,0,2.71a81.65,81.65,0,0,1-81.66,81.66ZM402.9,219.3l-33.69-58.52-14.76-25.63c-7.65-12.75-20.4-20.4-38.25-20.4a42.23,42.23,0,0,0-30.6,12.75l-94.35,94.35a42.23,42.23,0,0,0-12.75,30.6c0,15.3,7.65,30.6,20.4,38.25l13.52,8,73.18,43V469.2h45.9V303.45l-.83-.64L275.4,260.1l58.65-58.65,15.19,22.34,10.62,15.61,17.54,25.8H484.5V219.3ZM252.59,418.45a125.56,125.56,0,0,0-68.07-89.21,129.1,129.1,0,0,0-57-13C56.1,316.2,0,372.3,0,443.7a129.59,129.59,0,0,0,9.8,49.84,125.36,125.36,0,0,0,29.68,43.12c22.73,21.51,53.6,34.54,88,34.54,35.52,0,67.26-13.88,90.17-36.64a125.35,125.35,0,0,0,28.67-43.86,130.06,130.06,0,0,0,8.66-47A132.41,132.41,0,0,0,252.59,418.45ZM127.5,525.36A81.66,81.66,0,0,1,45.84,443.7c0-.27,0-.53,0-.8A81.65,81.65,0,0,1,209.11,441c0,.9,0,1.8,0,2.71a81.65,81.65,0,0,1-81.66,81.66Z" transform="translate(0 -40.8)"/>
-                            </svg>
-                            <br><span class="strong">BICICLETA</span>
-                        </center>
+                    <div class="sMarginT">
+                        <span class="mediumText xlMarginL">L&nbsp;&nbsp;&nbsp;WALTER</span>
+                    </div>     
+
+                    <div class="separator mMarginTB"></div>
+
+                    <div class="containerFlex centerVFlex sMarginL">
+                        <img src="./icons/contact.svg">
+                        <strong class="mediumText sMarginL">CONTACTO</strong>
                     </div>
                 </div>
-
-                <span class="col50 col100-mv justify otherLineFloat lMarginT">
-                    Diviértete y demuestra tu nivel de orientación!
-                </span>
-
-                <div class="col50 col100-mv xlMarginTB xlMarginT-mv sMarginB-mv displayBlock-mv otherLineFloat childFlexAllHeight">
-                    <div class="col50 col100-mv flexCenterHV">
-                        <img class="getOnGooglePlay" src="img/getOnGooglePlay.png">
-                    </div>
-                    <div class="col50 col100-mv mMarginT-mv flexCenterHV">
-                        <span class="strong">Más Información > </span>
-                    </div>
-                </div>
-
-                </div>
-
-                <img class="decorationImage" data-aos="fade-up" src="img/zoaSmartphone.png"/>
-            </section>
-
-            <!-- WALTER -->
-            <section id="walterSection" class="projectSection col">
-
-                <svg class="logoSection col" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 561.0011 106.68356">
-                    <g transform="translate(177.69734,71.724951)">
-                        <g transform="translate(-790.26253,-44.90128)">
-                            <path fill="white" d="m 642.4525,79.768929 c -5.67487,-0.47718 -10.77457,-2.23035 -15.40933,-5.29744 -7.74183,-5.12319 -12.97856,-13.47033 -14.17476,-22.59397 -0.0733,-0.5588 -0.17107,-1.4732 -0.21735,-2.032 -0.0541,-0.65308 -0.0845,-14.52742 -0.085,-38.84083 l -8.7e-4,-37.82483 h 13.92692 13.92692 l 0.0219,37.57083 0.0219,37.57083 0.18925,0.55644 c 0.47695,1.40234 1.54861,2.45719 2.94341,2.89725 l 0.59267,0.18698 h 11.72633 11.72634 l 0.59618,-0.18758 c 1.56503,-0.4924 2.78719,-1.86079 3.07907,-3.44747 0.0659,-0.35812 0.0924,-11.22011 0.0924,-37.82484 v -37.32244 h 13.92767 13.92766 l 10e-4,37.35916 c 10e-4,31.74131 0.0193,37.44347 0.12031,37.91983 0.32651,1.54039 1.51543,2.83303 3.04971,3.31576 l 0.59618,0.18758 h 11.72633 11.72633 l 0.59267,-0.18698 c 1.37739,-0.43456 2.47261,-1.5109 2.94138,-2.89066 l 0.19132,-0.56303 0.022,-37.57083 0.022,-37.57083 h 13.92683 13.92683 l -8.5e-4,37.82483 c -8.5e-4,24.31341 -0.0309,38.18775 -0.085,38.84083 -0.48103,5.80829 -2.20929,10.87051 -5.30417,15.53633 -5.1446,7.75598 -13.46855,12.97855 -22.59228,14.17476 -0.5588,0.0733 -1.4732,0.17108 -2.032,0.21735 -1.23116,0.10196 -84.42605,0.0971 -85.64034,-0.005 z m 123.02155,-37.73391 c 8.5e-4,-24.1506 0.0311,-38.1921298 0.0845,-38.8408298 0.47729,-5.79927 2.20069,-10.84835 5.30298,-15.5363302 4.89086,-7.39073 12.75146,-12.52345 21.45098,-14.0068 2.53508,-0.43225 1.9099,-0.41605 17.31434,-0.44869 15.69578,-0.0333 15.97384,-0.0266 18.73549,0.44873 11.88535,2.04563 21.59625,10.47096 25.31701,21.9654202 0.59649,1.84271 0.97712,3.53061996 1.30785,5.79967 l 0.18512,1.27 0.0249,38.5868298 0.0249,38.58683 H 841.29351 827.3649 l -0.0214,-15.47283 -0.0214,-15.47283 h -16.97567 -16.97566 l -0.0214,15.47283 -0.0214,15.47283 h -13.92744 -13.92744 l 8.4e-4,-37.82483 z m 56.59892,-30.90387 -6.30779,-0.0217 V -1.5476708 c 0,-6.96142 -0.0286,-12.6571302 -0.0636,-12.6571302 -0.035,0 -5.75946,5.6959502 -12.72106,12.6576602 L 790.32307,11.110529 h 6.37106 6.37106 v 12.67873 12.67872 l 12.65778,-12.65756 12.65779,-12.65756 z m 70.40021,68.63778 c -5.67487,-0.47718 -10.77457,-2.23035 -15.40933,-5.29744 -7.74184,-5.12319 -12.97856,-13.47033 -14.17476,-22.59397 -0.0733,-0.5588 -0.17108,-1.4732 -0.21736,-2.032 -0.0541,-0.65308 -0.0845,-14.52742 -0.085,-38.84083 l -8.7e-4,-37.82483 h 13.92692 13.92692 l 0.0219,37.57083 0.0219,37.57083 0.18924,0.55644 c 0.4684,1.37718 1.51863,2.42585 2.90109,2.89676 l 0.55033,0.18747 17.9705,0.0227 17.9705,0.0227 v 13.92614 13.92614 l -18.39383,-0.0116 c -10.11661,-0.006 -18.75578,-0.0421 -19.19817,-0.0793 z m 48.42934,-39.32141 V 1.0351892 h -11.43 -11.43 v -13.9276702 -13.92766 h 36.83 36.83 v 13.92766 13.9276702 h -11.43 -11.43 v 39.4123298 39.41233 h -13.97 -13.97 z m 86.95268,39.32141 c -5.6749,-0.47718 -10.7746,-2.23035 -15.4094,-5.29744 -7.4239,-4.91282 -12.50093,-12.69166 -14.00553,-21.45875 -0.48182,-2.80752 -0.47149,-2.22644 -0.47106,-26.49289 0,-22.3241098 0.01,-23.1314398 0.30188,-25.3576598 0.62423,-4.76108 2.38111,-9.42525 5.08681,-13.5043302 3.7061,-5.58734 9.1406,-9.94542 15.399,-12.34896 2.4037,-0.92314 4.895,-1.53284 7.9129,-1.93656 0.9627,-0.12878 3.1377,-0.14403 24.0665,-0.16881 l 23.0082,-0.0272 v 13.92804 13.9280502 l -22.1192,0.0226 -22.1191,0.0226 -0.563,0.19129 c -1.3798,0.46876 -2.4561,1.56399 -2.8907,2.94138 -0.1814,0.5751 -0.187,0.70682 -0.187,4.445 v 3.8523298 l 23.9395,0.0213 23.9395,0.0213 v 13.92752 13.92752 h -23.9666 -23.9666 l 0.031,3.95816 c 0.03,3.80224 0.038,3.98009 0.2163,4.51461 0.456,1.36868 1.5125,2.42509 2.8972,2.89676 l 0.5504,0.18747 22.1191,0.0224 22.1192,0.0224 v 13.92642 13.92641 l -22.5425,-0.0116 c -12.3984,-0.006 -22.9044,-0.0421 -23.3468,-0.0793 z m 53.1071,-38.32658 c 0.022,-36.2307598 0.032,-38.4825498 0.1734,-39.5604998 0.7364,-5.60063 2.5606,-10.40959 5.5884,-14.7319902 5.052,-7.21207 12.6035,-12.01162 21.2366,-13.4975 2.691,-0.46315 3.0098,-0.47154 17.9385,-0.4716 11.479,-4e-5 13.9968,0.0208 15.1977,0.12592 6.7857,0.59393 12.9129,3.05929 18.3726,7.39243 1.2233,0.97088 4.0525,3.78706 5.0154,4.99232 3.9598,4.9566202 6.3037,10.5501502 6.9795,16.6560902 0.1623,1.46609 0.1633,21.3333698 10e-4,22.6906698 -0.5264,4.40726 -1.826,7.75279 -4.2757,11.00666 -1.231,1.63517 -3.816,3.92775 -5.8154,5.15752 -0.4424,0.2721 -0.8131,0.50168 -0.8237,0.51018 -0.011,0.008 0.3894,0.17432 0.889,0.36848 4.2662,1.65805 6.6327,5.11586 7.9794,11.65916 0.163,0.79203 4.1473,25.78331 4.1473,26.01378 0,0.0843 -3.0655,0.10588 -15.0615,0.10588 h -15.0615 l -0.046,-0.1905 c -0.025,-0.10477 -0.9857,-5.23875 -2.1338,-11.40883 -1.5634,-8.40262 -2.139,-11.33354 -2.2931,-11.67735 -0.4735,-1.05669 -1.3063,-1.79032 -2.4353,-2.14539 l -0.6028,-0.18959 h -13.5467 -13.5466 l -0.021,12.80583 -0.021,12.80583 h -13.9284 -13.9284 l 0.023,-38.4175 z"/>
-                        </g>
-                    </g>
-                </svg>
-
-                <span class="textWhite col50 col100-mv justify otherLineFloat lMarginT">
-                    Un nuevo tipo de competición.<br><span class="strong">¿El objetivo?</span> Deberás encontrar los códigos a través del mapa de la aplicación y desplazarte hasta ellos. <span class="strong">¿Cómo sumo puntos?</span> Escanea a través de la aplicación el código encontrado para sumar puntos a tu marcador. <span class="strong">¿Y las preguntas?</span> En algunas ocasiones al escanear un código conseguirás desbloquear una pregunta, responder correctamente te hará ganar más puntos.<br><span class="strong">¿La actividad?</span> Cualquiera:
-                </span>
-
-                
-                <div class="col50 col100-mv xxlMarginTB xlMarginT-mv sMarginB-mv displayBlock-mv otherLineFloat childFlexAllHeight">
-                    <div class="col100 col100-mv mMarginT-mv flexCenterHV">
-                        <span style="color: #8be934" class="textWhite strong">En desarrollo...</span>
-                    </div>
-                </div>
-
-                <img class="decorationImage" data-aos="fade-left" src="img/walter.png"/>
-
-            </section>
-        </section>
- 
-        <!-- SEPARADOR -->
-        <div class="separator col100">
-            <span>/ / / / / / / / / / / / / / / / / / /</span>
-        </div>
-
-        <!-- SECCION CONTACTO -->
-
-        <section class="col100">
-            <h1>Contacto</h1>
-            <span>
-                Contacta con nosotros o visita nuestras redes sociales.
-            </span>        
-            <div class="col100">
-                <div class="contactElement col50">
-                    <div class="col100 flexCenterH">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;">
-                            <path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456
-                                C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504
-                                c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792
-                                c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184
-                                c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392
-                                c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352
-                                c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024
-                                c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568
-                                c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z"/>
+                <div class="bottomFlex containerFlex">
+                    <div class="socialPanel containerFlex centerVFlex" >
+                        <svg viewBox="0 0 512 512" xml:space="preserve" class="github">
+                            <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
                         </svg>
-                    </div>
 
-                    <div class="contactContent col100 flexCenterH">
-                        <span>611459667</span>
-                    </div>
-                </div>    
-
-                <div class="contactElement col50">
-                    <div class="col100 flexCenterH">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="511.626px" viewBox="0 0 511.626 511.626">
-                                <path d="M49.106,178.729c6.472,4.567,25.981,18.131,58.528,40.685c32.548,22.554,57.482,39.92,74.803,52.099
-                                    c1.903,1.335,5.946,4.237,12.131,8.71c6.186,4.476,11.326,8.093,15.416,10.852c4.093,2.758,9.041,5.852,14.849,9.277
-                                    c5.806,3.422,11.279,5.996,16.418,7.7c5.14,1.718,9.898,2.569,14.275,2.569h0.287h0.288c4.377,0,9.137-0.852,14.277-2.569
-                                    c5.137-1.704,10.615-4.281,16.416-7.7c5.804-3.429,10.752-6.52,14.845-9.277c4.093-2.759,9.229-6.376,15.417-10.852
-                                    c6.184-4.477,10.232-7.375,12.135-8.71c17.508-12.179,62.051-43.11,133.615-92.79c13.894-9.703,25.502-21.411,34.827-35.116
-                                    c9.332-13.699,13.993-28.07,13.993-43.105c0-12.564-4.523-23.319-13.565-32.264c-9.041-8.947-19.749-13.418-32.117-13.418H45.679
-                                    c-14.655,0-25.933,4.948-33.832,14.844C3.949,79.562,0,91.934,0,106.779c0,11.991,5.236,24.985,15.703,38.974
-                                    C26.169,159.743,37.307,170.736,49.106,178.729z"/>
-                                <path d="M483.072,209.275c-62.424,42.251-109.824,75.087-142.177,98.501c-10.849,7.991-19.65,14.229-26.409,18.699
-                                    c-6.759,4.473-15.748,9.041-26.98,13.702c-11.228,4.668-21.692,6.995-31.401,6.995h-0.291h-0.287
-                                    c-9.707,0-20.177-2.327-31.405-6.995c-11.228-4.661-20.223-9.229-26.98-13.702c-6.755-4.47-15.559-10.708-26.407-18.699
-                                    c-25.697-18.842-72.995-51.68-141.896-98.501C17.987,202.047,8.375,193.762,0,184.437v226.685c0,12.57,4.471,23.319,13.418,32.265
-                                    c8.945,8.949,19.701,13.422,32.264,13.422h420.266c12.56,0,23.315-4.473,32.261-13.422c8.949-8.949,13.418-19.694,13.418-32.265
-                                    V184.437C503.441,193.569,493.927,201.854,483.072,209.275z"/>                         
-                        </svg>
-                    </div>
-
-                    <div class="contactContent col100 flexCenterH">
-                        <span>611459667</span>
-                    </div>
-                </div>
-
-                <span class="col100">
-                    Visita nuestras redes sociales.
-                </span>   
-                
-                <div class="contactElement col33">
-                    <div class="col100 flexCenterH">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/>
-                        </svg>
-                    </div>
-                   
-                    <div class="contactContent col100 flexCenterH">
-                        <span>611459667</span>
-                    </div>
-                </div>
-
-                <div class="contactElement col33">
-                    <div class="col100 flexCenterH">
-                        <svg viewBox="-21 -117 682.66672 682"xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="-21 -117 682.66672 682" class="youtube sMarginL">
                             <path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/>
                         </svg>
-                    </div>
-                   
-                    <div class="contactContent col100 flexCenterH">
-                        <span>611459667</span>
-                    </div>
-                </div>
 
-                <div class="contactElement col33">
-                    <div class="col100 flexCenterH">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                           <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-                               c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-                               c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-                               c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-                               c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-                               c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-                               C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-                               C480.224,136.96,497.728,118.496,512,97.248z"/>
+                        <svg viewBox="0 0 24 24" height="28px" class="facebook">
+                            <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+                        </svg>
+                    
+                        <svg viewBox="0 0 512 512" xml:space="preserve" class="twitter xsMarginL">
+                            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568C480.224,136.96,497.728,118.496,512,97.248z"/>
                         </svg>
                     </div>
-                   
-                    <div class="contactContent col100 flexCenterH">
-                        <span>611459667</span>
+                </div>
+            </div>
+        </div>
+
+        <!---- BANNER ---->
+        <div id="banner360">
+            <span>DESARROLLO</span>
+        </div>
+
+        <div class="contentLimits">
+             <!---- CONOCENOS ---->
+            <section id="know">
+                <div class="sectionTitle containerFlex mMarginT">
+                    <h1 class="mMarginR">RUTILLAS TOBY</h1>
+                    <div class="separator centerVFlex"></div>
+                </div>
+               
+                <div class="content">
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                </div>
+            </section>
+
+            <!---- PROYECTOS ---->
+            <section id="projects">
+                <div class="sectionTitle containerFlex mMarginT">
+                    <h1 class="mMarginR">PROYECTOS</h1>
+                    <div class="separator centerVFlex"></div>
+                </div>
+
+                <div class="content">
+                    <span>Descubre nuestros proyectos.</span>
+                    <!---- ZOA ---->
+                    <article id="projectZoa" class="project mMarginT xlPadding lPadding-mb">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.86 162.57">
+                                <path d="M476.72,339.66l61.84,162.57H490.25l-8.64-22.63h-63l-8.87,22.63H361.34l63.54-162.57Zm-40.47,94.81h28.19l-13.86-36.6Z" transform="translate(-53.71 -339.66)"/>
+                                <path d="M291.22,339.66a81.29,81.29,0,0,0-81.28,81.28v81.29h81.28a81.3,81.3,0,0,0,81.29-81.29V339.66Zm0,117.44A36.16,36.16,0,1,1,327.38,421,36.16,36.16,0,0,1,291.22,457.1Z" transform="translate(-53.71 -339.66)"/>
+                                <path d="M195.36,339.67,132.15,457.1h63.21v45.13H53.72l63.2-117.44H53.71V339.66Z" transform="translate(-53.71 -339.66)"/>
+                            </svg>
+                        </div>
+                        <div class="containerFlex wrapFlex">
+                            <div class="flex70 flex60-tb flex100-mb mPaddingT">
+                                <div class="containerFlex columnFlex height100">
+                                    <span class="mMarginB">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+
+                                    <div class="buttonsPanel bottomFlex containerFlex wrapFlex">
+                                        <div class="flex100-mb containerFlex sMarginT sMarginR noneMarginR-mb">
+                                            <img src="img/getongp.svg" alt="Botón Google Play" class="centerHFlex-mb">
+                                        </div>
+                                       <div class="flex100-mb containerFlex sMarginT">
+                                            <button class="centerHFlex-mb">Más Info ></button>  
+                                       </div>
+                                                                           
+                                    </div>
+                                </div>                             
+                            </div>
+
+                            <div class="flex30 flex40-tb flex100-mb">
+                                <div class="mockup">
+                                    <img src="img/zoa-mockup.png" alt="Zoa Mockup" class="width100 ">
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </article>
+
+                    <!---- WALTER ---->
+                    <article id="projectWalter" class="project mMarginT xlPadding lPadding-mb">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.86 162.57">
+                                <path d="M476.72,339.66l61.84,162.57H490.25l-8.64-22.63h-63l-8.87,22.63H361.34l63.54-162.57Zm-40.47,94.81h28.19l-13.86-36.6Z" transform="translate(-53.71 -339.66)"/>
+                                <path d="M291.22,339.66a81.29,81.29,0,0,0-81.28,81.28v81.29h81.28a81.3,81.3,0,0,0,81.29-81.29V339.66Zm0,117.44A36.16,36.16,0,1,1,327.38,421,36.16,36.16,0,0,1,291.22,457.1Z" transform="translate(-53.71 -339.66)"/>
+                                <path d="M195.36,339.67,132.15,457.1h63.21v45.13H53.72l63.2-117.44H53.71V339.66Z" transform="translate(-53.71 -339.66)"/>
+                            </svg>
+                        </div>
+                        <div class="containerFlex wrapFlex">
+                            <div class="flex70 flex60-tb flex100-mb mPaddingT">
+                                <div class="containerFlex columnFlex height100">
+                                    <span class="mMarginB">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+
+                                    <div class="buttonsPanel bottomFlex containerFlex wrapFlex">
+                                        <div class="flex100-mb containerFlex sMarginT">
+                                            <button class="centerHFlex-mb">Próximamente...</button>  
+                                        </div>
+                                                                            
+                                    </div>
+                                </div>                             
+                            </div>
+
+                            <div class="flex30 flex40-tb flex100-mb">
+                                <div class="mockup">
+                                    <img src="img/zoa-mockup.png" alt="Zoa Mockup" class="width100 ">
+                                </div>
+                                
+                            </div>
+                        </div>    
+                    </article>
+                </div>
+            </section>
+            
+            <!---- CONTACTO ---->
+            <section id="contact">
+                <div class="sectionTitle containerFlex mMarginT">
+                    <h1 class="mMarginR">CONTACTO</h1>
+                    <div class="separator centerVFlex"></div>
+                </div>
+
+                <div class="content">
+                    <span>¿Tienes algo que contarnos?</span>
+                    <div class="mail mMarginTB">
+                        <div class="containerFlex">
+                            <img src="./icons/contact.svg" class="centerHFlex">
+                        </div>
+                        <div class="containerFlex xsMarginT">
+                            <strong class="centerHFlex">hola@rutillastoby.com</strong>
+                        </div>
+                        
+                    </div>
+                    <span>Visita nuestras redes</span>
+                    <div class="socialPanel mMarginT centerHFlex containerFlex wrapFlex">
+
+                        <div class="element github containerFlex sMarginT flex50 flex100-mb">
+                            <div class="content containerFlex rightFlex sMarginR">
+                                <svg viewBox="0 0 512 512" xml:space="preserve">
+                                    <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
+                                </svg>
+                                <strong class="centerVFlex rightFlex">rutillastoby</strong>
+                            </div>
+                        </div>
+
+                        <div class="element youtube containerFlex sMarginT flex50 flex100-mb">
+                            <div class="content containerFlex sMarginL">
+                                <svg viewBox="-21 -117 682.66672 682">
+                                    <path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/>
+                                </svg>
+                                <strong class="centerVFlex rightFlex">rutillastoby</strong>
+                            </div>
+                        </div>
+
+                        <div class="element facebook containerFlex sMarginT flex50 flex100-mb">
+                            <div class="content containerFlex rightFlex sMarginR">
+                                <svg viewBox="0 0 24 24" height="28px">
+                                    <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+                                </svg>
+                                <strong class="centerVFlex rightFlex">rutillastoby</strong>    
+                            </div>
+                        </div>
+    
+                        <div class="element twitter containerFlex sMarginT flex50 flex100-mb">
+                            <div class="content containerFlex sMarginL">
+                                <svg viewBox="0 0 512 512" xml:space="preserve">
+                                    <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568C480.224,136.96,497.728,118.496,512,97.248z"/>
+                                </svg>
+                                <strong class="centerVFlex rightFlex">rutillastoby</strong>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                
-
+            </section>
+    
+        </div>
+       
+        <footer class="xxlMarginT width100">
+            <div class="contentLimits lPaddingT containerFlex">
+                <svg id="footerLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1213 638.89">
+                    <path d="M1213,366V638.89H360V432h36a108,108,0,0,0,0-216H0V0H486C655,0,792,137,792,306a305,305,0,0,1-83.43,210H997V366Z"/>
+                </svg>
+                <span id="copyright" class="fitContentH bottomFlex rightFlex textRight">Rutillas Toby<br>2012 - 2021<span>
             </div>
-        </section>
+        </footer>
     </body>
 
     <script>
-        AOS.init();
+        $(document).ready(function(){
+            $('#nav-icon').click(function(){
+                $(this).toggleClass('open');
+                $('#menu').toggleClass('open');
+                $('#menuTitle').toggleClass('open');                
+            });
+
+           //-----------------------------------------------------------------
+
+            /**
+            * Cambiar el tamanno de la cabecera (topbar)  normal<->mini
+            */
+            function changeHeaderSize(){
+                if(window.pageYOffset>0)
+                    $('#menu, header, #banner360').addClass('mini');
+                else
+                    $('#menu, header, #banner360').removeClass('mini');
+            }
+            //Inicializacion
+            changeHeaderSize();
+            //Al hacer scroll 
+            window.onscroll = function() {changeHeaderSize()}
+        });
     </script>
 </html>

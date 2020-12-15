@@ -1,136 +1,338 @@
-/* TAMANNOS */
-.col100{ width: 100%; float: left; }
-.col50{ width: 50%; float: left; }
-.col33{ width: 33.333%; float: left; }
-.col25{ width: 25%; float: left; }
-.col{float: left;}
+body{
+    margin:0;
+    height: 100%;
 
-/* MARGENES */
+    /* Personalizar */
+    --xs:5px;
+    --s:10px;
+    --m:20px;
+    --l:30px;
+    --xl:50px;
+    --xxl:100px;
 
-.sMarginT{
-    margin-top: 8px;
+    --maxlimits:1400px;
 }
-.mMarginT{
-    margin-top: 15px;
-}
-.lMarginT{
-    margin-top: 25px;
-}
-
-.lMarginB{
-    margin-bottom: 25px;
+*{
+    box-sizing: border-box;
 }
 
-.xlMarginTB{
-    margin:70px 0px 70px 0px;
+/*********** SCROLL BAR ***********/
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(233, 233, 233); 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(199, 199, 199); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 87, 87); 
 }
 
-.xxlMarginTB{
-    margin:160px 0px 160px 0px;
+
+/*********** LIMITES DE CONTENIDO ***********/
+.contentLimits{
+    max-width: var(--maxlimits);
+    padding-left: var(--xl);
+    padding-right: var(--xl); 
+    margin: 0 auto;
+    width: 100%;   
 }
 
-/* POSICIONES */
-.absolute{ position: absolute; }
-.relative{ position: relative; }
+/*********** POSICIONAMIENTO ***********/
+.containerFlex{
+    display: flex;
+}
+.rightFlex{
+    margin-left: auto;
+}
+.bottomFlex{
+    margin-top: auto;
+}
+.centerFlex{
+    margin:auto;
+}
+.centerHFlex{
+    margin-left: auto;
+    margin-right: auto;
+}
+.centerVFlex{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.containerDistributeFlex{ 
+    /* Repartir elementos horizontalmente equitativamente | - - - | */
+    display: flex;
+    justify-content: space-between;
+}
 
-/* CAPAS */
-.capa1{z-index: 100;}
-.capa2{z-index: 90;}
-.capa3{z-index: 80;}
-.capa4{z-index: 70;}
-.capa5{z-index: 60;}
+.columnFlex{
+    flex-direction: column;
+}
 
-/* OTROS */
-.otherLineFloat{clear: both;}
-.strong{font-weight: 700;}
-.justify{
+.wrapFlex{
+    /* Para maquetación responsiva */
+    flex-wrap: wrap;
+}
+.flex50{
+    flex:50%;
+}
+.flex30{
+    flex:30%;
+}
+.flex70{
+    flex:70%;
+}
+    
+
+.fixed{
+    position: fixed;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position:absolute;
+}
+
+/*********** ESTRUCTURA ***********/
+main{
+    flex: 1;
+}
+
+/*********** BORDER RADIUS ***********/
+.sRadiusT{ border-radius: var(--s) var(--s) 0px 0px;}
+.sRadiusB{ border-radius: 0px 0px var(--s) var(--s)}
+
+/*********** PADDING ***********/
+.sPadding{ padding: var(--s);}
+.mPadding{ padding: var(--m);}
+.lPadding{ padding: var(--l);}
+.xlPadding{ padding: var(--xl);}
+.xxlPadding{ padding: var(--xxl);}
+
+.sPaddingTB{ padding-top: var(--s); padding-bottom: var(--s); }
+.mPaddingTB{ padding-top: var(--m); padding-bottom: var(--m); }
+.lPaddingTB{ padding-top: var(--l); padding-bottom: var(--l); }
+.xlPaddingTB{ padding-top: var(--xl); padding-bottom: var(--xl); }
+.xxlPaddingTB{ padding-top: var(--xxl); padding-bottom: var(--xxl); }
+
+.sPaddingT{ padding-top: var(--s); }
+.mPaddingT{ padding-top: var(--m); }
+.lPaddingT{ padding-top: var(--l); }
+.xlPaddingT{ padding-top: var(--xl); }
+.xxlPaddingT{ padding-top: var(--xxl); }
+
+.sPaddingB{ padding-bottom: var(--s); }
+.mPaddingB{ padding-bottom: var(--m); }
+.lPaddingB{ padding-bottom: var(--l); }
+.xlPaddingB{ padding-bottom: var(--xl); }
+.xxlPaddingB{ padding-bottom: var(--xxl); }
+
+.sPaddingLR{ padding-left: var(--s); padding-right: var(--s); }
+.mPaddingLR{ padding-left: var(--m); padding-right: var(--m); }
+.lPaddingLR{ padding-left: var(--l); padding-right: var(--l); }
+.xlPaddingLR{ padding-left: var(--xl); padding-right: var(--xl); }
+.xxlPaddingLR{ padding-left: var(--xxl); padding-right: var(--xxl); }
+
+.xsPaddingL{ padding-left: var(--xs); }
+.sPaddingL{ padding-left: var(--s); }
+.mPaddingL{ padding-left: var(--m); }
+.lPaddingL{ padding-left: var(--l); }
+.xlPaddingL{ padding-left: var(--xl); }
+.xxlPaddingL{ padding-left: var(--xxl); }
+
+.sPaddingR{ padding-right: var(--s); }
+.mPaddingR{ padding-right: var(--m); }
+.lPaddingR{ padding-right: var(--l); }
+.xlPaddingR{ padding-right: var(--xl); }
+.xxlPaddingR{ padding-right: var(--xxl); }
+
+/*********** MARGIN ***********/
+.sMargin{ margin: var(--s); }
+.mMargin{ margin: var(--m); }
+.lMargin{ margin: var(--l); }
+.xlMargin{ margin: var(--xl); }
+.xxlMargin{ margin: var(--xxl); }
+
+.sMarginTB{ margin-top: var(--s); margin-bottom: var(--s); }
+.mMarginTB{ margin-top: var(--m); margin-bottom: var(--m); }
+.lMarginTB{ margin-top: var(--l); margin-bottom: var(--l); }
+.xlMarginTB{ margin-top: var(--xl); margin-bottom: var(--xl); }
+.xxlMarginTB{ margin-top: var(--xxl); margin-bottom: var(--xxl); }
+
+.xsMarginT{ margin-top: var(--xs); }
+.sMarginT{ margin-top: var(--s); }
+.mMarginT{ margin-top: var(--m); }
+.lMarginT{ margin-top: var(--l); }
+.xlMarginT{ margin-top: var(--xl); }
+.xxlMarginT{ margin-top: var(--xxl); }
+
+.sMarginB{ margin-bottom: var(--s); }
+.mMarginB{ margin-bottom: var(--m); }
+.lMarginB{ margin-bottom: var(--l); }
+.xlMarginB{ margin-bottom: var(--xl); }
+.xxlMarginB{ margin-bottom: var(--xxl); }
+
+.sMarginLR{ margin-left: var(--s); margin-right: var(--s); }
+.mMarginLR{ margin-left: var(--m); margin-right: var(--m); }
+.lMarginLR{ margin-left: var(--l); margin-right: var(--l); }
+.xlMarginLR{ margin-left: var(--xl); margin-right: var(--xl); }
+.xxlMarginLR{ margin-left: var(--xxl); margin-right: var(--xxl); }
+
+.xsMarginL{ margin-left: var(--xs); }
+.sMarginL{ margin-left: var(--s); }
+.mMarginL{ margin-left: var(--m); }
+.lMarginL{ margin-left: var(--l); }
+.xlMarginL{ margin-left: var(--xl); }
+.xxlMarginL{ margin-left: var(--xxl); }
+
+.sMarginR{ margin-right: var(--s); }
+.mMarginR{ margin-right: var(--m); }
+.lMarginR{ margin-right: var(--l); }
+.xlMarginR{ margin-right: var(--xl); }
+.xxlMarginR{ margin-right: var(--xxl); }
+
+
+/*********** TAMANNO ***********/
+.height100{ height: 100%; }
+
+.width100{ width: 100%; }
+.width60{ width: 60%; }
+.width50{ width: 50%; }
+.width40{ width: 40%; }
+.width30{ width: 30%; }
+
+.width250px{ width: 250px;}
+.width300px{ width: 300px;}
+.width400px{ width: 300px;}
+
+.fitContentW{ width: fit-content; }
+.fitContentH{ height: fit-content; }
+
+/*********** CAPAS ***********/
+.layer0{
+    z-index: 0;
+}
+.layer1{
+    z-index: 10;
+}
+.layer2{
+    z-index: 20;
+}
+.layer3{
+    z-index: 30;
+}
+
+/*********** TEXTO ***********/
+.textCenter{
+    text-align: center;
+}
+.textRight{
+    text-align: right;
+}
+.textJustify{
     text-align: justify;
-    text-justify: inter-word;
 }
-.textWhite{
-    color: white;
+.textBold{
+    font-weight: 700;
 }
-
-/* CENTRADO */
-.childFlexAllHeight{ 
-    display: flex;
-    align-items: stretch; 
-    /*Los elementos hijos se ajustan en altura al 100% del padre*/ 
-}
-.flexCenterH {
-    display: flex;
-    justify-content: center;
-}
-.flexCenterV {
-    display: flex;
-    align-items: center;
-}
-.flexCenterHV {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.textSemiBold{
+    font-weight: 500;
 }
 
-/******** GLOBAL MOVIL ********/
-@media only screen and (max-width: 800px) {
-
-    /* TAMANNOS */
-    .col100-mv{ width: 100%!important; }
-    .col50-mv{ width: 50%!important; }
-
-    /* MARGENES */
-    .sMarginT-mv{
-        margin-top: 8px;
-    }
-    .mMarginT-mv{
-        margin-top: 15px;
-    }
-    .lMarginT-mv{
-        margin-top: 25px;
-    }
-    .xlMarginT-mv{
-        margin-top: 40px;
-    }
-
-    .nMarginB-mv{
-        margin-bottom: 0px;
-    }
-    .sMarginB-mv{  
-        margin-bottom: 15px;
-    }
-    .mMarginB-mv{  
-        margin-bottom: 15px;
-    }
-    .lMarginTB-mv{
-        margin:25px 0px 25px 0px;
-    }
-    
-
-    /* OTROS */
-    .displayBlock-mv{
-        display: block;
-    }
+/*********** VISIBILIDAD ***********/
+.showNone{
+    display: none;
+}
+.hidden{
+    visibility: hidden;
 }
 
-/******** GLOBAL TABLET ********/
-@media only screen and (min-width: 801px) and (max-width: 1400px) {
-    /* TAMANNOS */
-    .col100-tb{ width: 100%!important; }
-    .col50-tb{ width: 50%!important; }
-    
-    /* MARGENES */
-    .sMarginT-tb{
-        margin-top: 8px;
-    }
-    .mMarginT-tb{
-        margin-top: 15px;
-    }
-    .lMarginTB-tb{
-        margin:25px 0px 25px 0px;
-    }
+/*********** CURSOR ***********/
+.cPointer{
+    cursor: pointer;
+}
 
-    /* OTROS */
-    .displayBlock-tb{
-        display: block;
+/********** BOTONES **********/
+button{
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:focus, input:focus {outline:0;}
+
+/******** INPUTS *********/
+input{
+    border-radius: 10px;
+    padding: 8px 15px;
+    border: 1.5px solid gray;
+    font-size: 14px;
+}
+.iconInput{
+    width: 22px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+/****************************************************/
+/*                    RESPONSIVO                    */
+/****************************************************/
+
+/*************** MOVIL *******************/
+@media only screen and (max-width: 700px) {
+
+    /*********** LIMITES DE CONTENIDO ***********/
+    .contentLimits{
+        padding-left: var(--m);   
+        padding-right: var(--m);
+    }
+    /*********** POSICIONAMIENTO ***********/
+    .centerHFlex-mb{
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .flex100-mb{
+        flex:100%;
+    }
+    /*********** MARGIN ***********/
+    .sMargin-mb{ margin: var(--s); }
+    .mbMargin-mb{ margin: var(--m); }
+    .lMargin-mb{ margin: var(--l); }
+    .xlMargin-mb{ margin: var(--xl); }
+    .xxlMargin-mb{ margin: var(--xxl); }
+
+    .noneMarginR-mb{ margin-right: 0!important; }
+
+    /*********** PADDING ***********/
+    .sPadding-mb{ padding: var(--s);}
+    .mPadding-mb{ padding: var(--m);}
+    .lPadding-mb{ padding: var(--l);}
+    .xlPadding-mb{ padding: var(--xl);}
+    .xxlPadding-mb{ padding: var(--xxl);}
+}
+
+/*************** TABLET *******************/
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+    /*********** POSICIONAMIENTO ***********/
+    .centerHFlex-tb{
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .flex100-tb{
+        flex:100%;
+    }
+    .flex60-tb{
+        flex:60%;
+    }
+    .flex40-tb{
+        flex:40%;
     }
 }
