@@ -308,8 +308,16 @@ input{
     .lMargin-mb{ margin: var(--l); }
     .xlMargin-mb{ margin: var(--xl); }
     .xxlMargin-mb{ margin: var(--xxl); }
-
     .noneMarginR-mb{ margin-right: 0!important; }
+
+    .xsMarginT-mb{ margin-top: var(--xs); }
+    .sMarginT-mb{ margin-top: var(--s); }
+    .mMarginT-mb{ margin-top: var(--m); }
+    .lMarginT-mb{ margin-top: var(--l); }
+    .xlMarginT-mb{ margin-top: var(--xl); }
+    .xxlMarginT-mb{ margin-top: var(--xxl); }
+
+
 
     /*********** PADDING ***********/
     .sPadding-mb{ padding: var(--s);}
@@ -317,6 +325,8 @@ input{
     .lPadding-mb{ padding: var(--l);}
     .xlPadding-mb{ padding: var(--xl);}
     .xxlPadding-mb{ padding: var(--xxl);}
+
+    .nonePaddingR-mb{ padding-right: 0!important; }
 }
 
 /*************** TABLET *******************/

@@ -1,13 +1,20 @@
 <html>
     <head>
         <title>Rutillas Toby</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- CSS -->
         <link rel="stylesheet" href="./css/nav-icon.css">
         <link rel="stylesheet" href="./css/global.css">
         <link rel="stylesheet" href="./css/style.css">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="crossorigin="anonymous"></script>
+        <!-- LINKS MARZIPANO -->
+        <script src="js/pano.js"></script>
+        <script src="js/marzipano/es5-shim.js"></script>
+        <script src="js/marzipano/eventShim.js"></script>
+        <script src="js/marzipano/requestAnimationFrame.js"></script>
+        <script src="js/marzipano/marzipano.js"></script>
+        <script src="js/marzipano/DeviceOrientationControlMethod.js"></script>
     </head>
     <body>
 
@@ -88,8 +95,11 @@
         </div>
 
         <!---- BANNER ---->
-        <div id="banner360">
-            <span>DESARROLLO</span>
+        <div id="banner360" class="relative">
+            <div class="content absolute layer1">
+                <span>DESARROLLO</span>
+            </div>
+            <div id="pano" class="absolute layer0"></div>
         </div>
 
         <div class="contentLimits">
@@ -133,7 +143,9 @@
                         <div class="containerFlex wrapFlex">
                             <div class="flex70 flex60-tb flex100-mb mPaddingT">
                                 <div class="containerFlex columnFlex height100">
-                                    <span class="mMarginB">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                                    <span class="mMarginB mPaddingR nonePaddingR-mb">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.
+                                    </span>
 
                                     <div class="buttonsPanel bottomFlex containerFlex wrapFlex">
                                         <div class="flex100-mb containerFlex sMarginT sMarginR noneMarginR-mb">
@@ -147,8 +159,8 @@
                                 </div>                             
                             </div>
 
-                            <div class="flex30 flex40-tb flex100-mb">
-                                <div class="mockup">
+                            <div class="flex30 flex40-tb flex100-mb containerFlex">
+                                <div class="mockup mMarginT-mb">
                                     <img src="img/zoa-mockup.png" alt="Zoa Mockup" class="width100 ">
                                 </div>
                                
@@ -265,16 +277,29 @@
 
     <script>
         $(document).ready(function(){
+
+            // Botón de menu
             $('#nav-icon').click(function(){
                 $(this).toggleClass('open');
                 $('#menu').toggleClass('open');
                 $('#menuTitle').toggleClass('open');                
             });
 
+            // Cerrar menu al pulsar fuera del mismo
+            $('#menu').click(function(){
+                $(this).toggleClass('open');
+                $('#nav-icon').toggleClass('open');
+                $('#menuTitle').toggleClass('open');                
+            }).children().click(function(e) {
+                //No cerrar si se pulsa en el propio menu
+                return false;
+            });
+
            //-----------------------------------------------------------------
 
             /**
-            * Cambiar el tamanno de la cabecera (topbar)  normal<->mini
+            * Cambiar el tamanno de la cabecera (topbar) al subir al inicio de la pagina
+            * normal<->mini
             */
             function changeHeaderSize(){
                 if(window.pageYOffset>0)

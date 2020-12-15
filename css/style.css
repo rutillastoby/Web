@@ -162,16 +162,23 @@ header.mini #mainLogo{
     white-space: nowrap; 
 }
 
-
 /******* BANNER 360 ********/
 #banner360{
+    background-color: #000;
     height: 500px;
-    background-color: antiquewhite;
     margin-top: 120px;
     transition: margin-top var(--miniVelocity) ease;
 }
 #banner360.mini{
     margin-top: 56px;
+}
+#pano{
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+#banner360 .content{
+
 }
 
 /******* PROYECTOS ********/
