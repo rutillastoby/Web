@@ -17,8 +17,11 @@ $( document ).ready(function() {
     controls.registerMethod('deviceOrientation', deviceOrientationControlMethod);
 
     //2. RECURSO
-    var source = Marzipano.ImageUrlSource.fromString("img/360/{z}/{f}/{y}/{x}.jpg",           
-    {cubeMapPreviewUrl: "img/360/preview.jpg", 
+    //Cargar de forma aleatoria una imagen de banner
+    var sourcesList=["archi", "auro", "black", "cloud", "leaf", "mount", "mud", "sea"]
+    var randomnumber = Math.floor(Math.random() * ((sourcesList.length-1) - 0 + 1)) + 0;
+    var source = Marzipano.ImageUrlSource.fromString("img/360/"+sourcesList[randomnumber]+"/{z}/{f}/{y}/{x}.jpg",           
+    {cubeMapPreviewUrl: "img/360/"+sourcesList[randomnumber]+"/preview.jpg", 
     cubeMapPreviewFaceOrder: 'bdflru'});//(bdflru para establecer el orden de la capas de la imagen de preview, cada letra una cara del cubo)
 
     //3. GEOMETRIA 

@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="./css/style.css">
         <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="crossorigin="anonymous"></script>
+        <!-- SCRIPTS -->
+        <script src="js/main.js"></script>
         <!-- LINKS MARZIPANO -->
         <script src="js/pano.js"></script>
         <script src="js/marzipano/es5-shim.js"></script>
@@ -154,7 +156,7 @@
                     <span>Descubre nuestros proyectos.</span>
                     <!---- ZOA ---->
                     <article id="projectZoa" class="project mMarginT xlPadding lPadding-mb">
-                        <div class="logo">
+                        <div class="logo sMarginT-mb">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.86 162.57">
                                 <path d="M476.72,339.66l61.84,162.57H490.25l-8.64-22.63h-63l-8.87,22.63H361.34l63.54-162.57Zm-40.47,94.81h28.19l-13.86-36.6Z" transform="translate(-53.71 -339.66)"/>
                                 <path d="M291.22,339.66a81.29,81.29,0,0,0-81.28,81.28v81.29h81.28a81.3,81.3,0,0,0,81.29-81.29V339.66Zm0,117.44A36.16,36.16,0,1,1,327.38,421,36.16,36.16,0,0,1,291.22,457.1Z" transform="translate(-53.71 -339.66)"/>
@@ -191,7 +193,7 @@
 
                     <!---- WALTER ---->
                     <article id="projectWalter" class="project mMarginT xlPadding lPadding-mb">
-                        <div class="logo">
+                        <div class="logo sMarginT-mb">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.86 162.57">
                                 <path d="M476.72,339.66l61.84,162.57H490.25l-8.64-22.63h-63l-8.87,22.63H361.34l63.54-162.57Zm-40.47,94.81h28.19l-13.86-36.6Z" transform="translate(-53.71 -339.66)"/>
                                 <path d="M291.22,339.66a81.29,81.29,0,0,0-81.28,81.28v81.29h81.28a81.3,81.3,0,0,0,81.29-81.29V339.66Zm0,117.44A36.16,36.16,0,1,1,327.38,421,36.16,36.16,0,0,1,291.22,457.1Z" transform="translate(-53.71 -339.66)"/>
@@ -300,43 +302,4 @@
             </div>
         </footer>
     </body>
-
-    <script>
-        $(document).ready(function(){
-
-            // Botón de menu
-            $('#nav-icon').click(function(){
-                $(this).toggleClass('open');
-                $('#menu').toggleClass('open');
-                $('#menuTitle').toggleClass('open');                
-            });
-
-            // Cerrar menu al pulsar fuera del mismo
-            $('#menu').click(function(){
-                $(this).toggleClass('open');
-                $('#nav-icon').toggleClass('open');
-                $('#menuTitle').toggleClass('open');                
-            }).children().click(function(e) {
-                //No cerrar si se pulsa en el propio menu
-                return false;
-            });
-
-           //-----------------------------------------------------------------
-
-            /**
-            * Cambiar el tamanno de la cabecera (topbar) al subir al inicio de la pagina
-            * normal<->mini
-            */
-            function changeHeaderSize(){
-                if(window.pageYOffset>0)
-                    $('#menu, header, #banner360').addClass('mini');
-                else
-                    $('#menu, header, #banner360').removeClass('mini');
-            }
-            //Inicializacion
-            changeHeaderSize();
-            //Al hacer scroll 
-            window.onscroll = function() {changeHeaderSize()}
-        });
-    </script>
 </html>

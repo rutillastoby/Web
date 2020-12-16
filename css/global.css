@@ -246,7 +246,7 @@ main{
 .textSemiBold{
     font-weight: 500;
 }
-.noselect {
+.noselect, a {
     /*Bloquear selecciond del texto*/
     -webkit-touch-callout: none; 
       -webkit-user-select: none; 
