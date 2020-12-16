@@ -52,6 +52,13 @@ header .content{
     width: 70px;
     transition: width var(--miniVelocity) ease;
 }
+header.mini-mb .content,
+header.mini-mb #topLine,
+header.mini-mb #mainLogo,
+#menu.mini-mb,
+#banner360.mini-mb{
+    transition: none!important;
+}
 
 header.mini .content{
     height: 50px;
@@ -184,6 +191,7 @@ header.mini #mainLogo{
 }
 #banner360 .content .squareText{
     width: fit-content;
+    width: -moz-max-content;
     max-width: 100%;
     background-color: white;
     font-weight: bold;

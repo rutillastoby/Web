@@ -1,6 +1,8 @@
 //FUNCIONALIDAD PRINCIPAL
 
 $(document).ready(function(){
+    
+
     // Botón de menu
     $('#nav-icon').click(function(){
         $(this).toggleClass('open');
@@ -25,7 +27,7 @@ $(document).ready(function(){
     * normal<->mini
     */
     function changeHeaderSize(){
-        if(window.pageYOffset>0)
+        if(window.pageYOffset>10 || window.matchMedia('screen and (max-width: 700px)').matches)
             $('#menu, header, #banner360').addClass('mini');
         else
             $('#menu, header, #banner360').removeClass('mini');
@@ -53,3 +55,4 @@ $(document).ready(function(){
     Rutillas Toby    
     `);
 });
+
