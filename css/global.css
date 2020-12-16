@@ -83,6 +83,9 @@ body{
 .flex30{
     flex:30%;
 }
+.flex25{
+    flex:25%;
+}
 .flex70{
     flex:70%;
 }
@@ -246,6 +249,9 @@ main{
 .textSemiBold{
     font-weight: 500;
 }
+.textMLine{
+    line-height: 1.35;
+}
 .noselect, a {
     /*Bloquear selecciond del texto*/
     -webkit-touch-callout: none; 
@@ -267,6 +273,9 @@ main{
 /*********** CURSOR ***********/
 .cPointer{
     cursor: pointer;
+}
+.cWait{
+    cursor: wait;
 }
 
 /********** IMAGENES **********/
@@ -319,6 +328,13 @@ input{
     .flex100-mb{
         flex:100%;
     }
+    .flex50-mb{
+        flex:50%;
+    }
+    .leftFlex-mb{
+        margin-right: auto!important;
+        margin-left: 0!important;
+    }
     /*********** MARGIN ***********/
     .sMargin-mb{ margin: var(--s); }
     .mbMargin-mb{ margin: var(--m); }
@@ -361,5 +377,8 @@ input{
     }
     .flex40-tb{
         flex:40%;
+    }
+    .flex50-tb{
+        flex:50%;
     }
 }

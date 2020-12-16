@@ -50,7 +50,7 @@
         <div id="menu">
             <div class="content lPadding containerFlex columnFlex">
                 <div class="xlMarginB">
-                    <div class="containerFlex centerVFlex sMarginL">
+                    <div class="containerFlex centerVFlex sMarginL" onclick="goToAnchor('#know')">
                         <img src="./icons/know.svg">
                         <strong class="mediumText sMarginL">NOSOTROS</strong>
                     </div>
@@ -134,7 +134,7 @@
                         <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
                 </div>
                 <div class="authorPanel containerFlex mMarginT">
-                    <div class="rightFlex containerFlex">
+                    <div class="rightFlex centerHFlex-mb containerFlex cPointer" onclick="window.open('https://github.com/angelsalascalvo')">
                         <img src="img/profile.png" alt="Foto de perfil" class="imageRound centerVFlex sMarginR">
                         <span class="centerVFlex">Ángel Salas Calvo</span>
                     </div>
@@ -158,24 +158,66 @@
                     <!---- ZOA ---->
                     <article id="projectZoa" class="project mMarginT xlPadding lPadding-mb">
                         <div class="logo sMarginT-mb">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.86 162.57">
-                                <path d="M476.72,339.66l61.84,162.57H490.25l-8.64-22.63h-63l-8.87,22.63H361.34l63.54-162.57Zm-40.47,94.81h28.19l-13.86-36.6Z" transform="translate(-53.71 -339.66)"/>
-                                <path d="M291.22,339.66a81.29,81.29,0,0,0-81.28,81.28v81.29h81.28a81.3,81.3,0,0,0,81.29-81.29V339.66Zm0,117.44A36.16,36.16,0,1,1,327.38,421,36.16,36.16,0,0,1,291.22,457.1Z" transform="translate(-53.71 -339.66)"/>
-                                <path d="M195.36,339.67,132.15,457.1h63.21v45.13H53.72l63.2-117.44H53.71V339.66Z" transform="translate(-53.71 -339.66)"/>
-                            </svg>
+                            <img src="img/zoalogo.svg" alt="Logo ZOA" class="logo">
                         </div>
                         <div class="containerFlex wrapFlex">
                             <div class="flex70 flex60-tb flex100-mb mPaddingT">
                                 <div class="containerFlex columnFlex height100">
-                                    <span class="mMarginB mPaddingR nonePaddingR-mb textJustify">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.
-                                    </span>
+                                    <div class="xlMarginB lPaddingR nonePaddingR-mb textJustify textMLine">
+                                        <span>Un nuevo tipo de competición.</span>
+                                        <br><strong>¿El objetivo?</strong> Usando el mapa de la aplicación para orientarte deberás desplazarte hasta encontrar algún código. 
+                                        <strong>¿Cómo sumo puntos?</strong> Cuando encuentres un código deberás escanearlo con la aplicación para sumar puntos a tu marcador. 
+                                        <strong>¿Y las preguntas?</strong> En algunas ocasiones al escanear un código conseguirás desbloquear una pregunta, responder correctamente te hará ganar más puntos.
+                                        <br><br><strong>¿La actividad?</strong> <span>Cualquiera.</span>
+
+                                        <div class="containerFlex wrapFlex">
+                                            <div class="containerFlex fitContentW columnFlex flex25 flex50-mb flex50-tb sMarginT">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459 459" width="43px" height="56px" class="centerHFlex">
+                                                    <path d="M405.45,51c-5.101-15.3-20.4-25.5-35.7-25.5H89.25c-17.85,0-30.6,10.2-35.7,25.5L0,204v204c0,15.3,10.2,25.5,25.5,25.5H51
+                                                        c15.3,0,25.5-10.2,25.5-25.5v-25.5h306V408c0,15.3,10.2,25.5,25.5,25.5h25.5c15.3,0,25.5-10.2,25.5-25.5V204L405.45,51z
+                                                            M89.25,306C68.85,306,51,288.15,51,267.75s17.85-38.25,38.25-38.25s38.25,17.85,38.25,38.25S109.65,306,89.25,306z M369.75,306
+                                                        c-20.4,0-38.25-17.85-38.25-38.25s17.85-38.25,38.25-38.25S408,247.35,408,267.75S390.15,306,369.75,306z M51,178.5L89.25,63.75
+                                                        h280.5L408,178.5H51z"/>
+                                                    </svg>   
+                                                    <strong class="centerHFlex">COCHE</strong>
+                                            </div>
+                                            <div class="containerFlex fitContentW columnFlex flex25 flex50-mb flex50-tb sMarginT">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="56px" height="56px" class="centerHFlex">
+                                                        <path d="M414.72,192.64l-85.973-85.973h-94.08v42.667h76.587L353.92,192H106.667C46.933,192,0,238.933,0,298.667
+                                                            s46.933,106.667,106.667,106.667c52.48,0,94.933-36.053,104.533-85.333h35.2l59.093-59.093c-4.48,11.52-6.827,24.32-6.827,37.76
+                                                            c0,59.733,46.933,106.667,106.667,106.667C465.067,405.333,512,358.4,512,298.667C512,242.133,469.973,196.907,414.72,192.64z
+                                                                M166.827,320c-8.96,24.533-32.853,42.667-60.16,42.667c-34.773,0-64-29.227-64-64c0-34.773,29.227-64,64-64
+                                                            c27.307,0,51.2,18.133,60.16,42.667h-60.16V320H166.827z M405.333,362.667c-35.413,0-64-28.587-64-64s28.587-64,64-64
+                                                            s64,28.587,64,64S440.747,362.667,405.333,362.667z"/>
+                                                    </svg>   
+                                                    <strong class="centerHFlex">MOTO</strong>
+                                            </div>
+                                            <div class="containerFlex fitContentW columnFlex flex25 flex50-mb flex50-tb sMarginT">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.667 458.667" width="56px" height="50px" style="margin-bottom: 6px;" class="centerHFlex">
+                                                        <path d="M283.733,85.333c23.467,0,42.667-19.2,42.667-42.667C326.4,19.2,307.2,0,283.733,0s-42.667,19.2-42.667,42.667S260.267,85.333,283.733,85.333z"/>
+                                                        <path d="M401.067,245.333v-42.667c-39.467,0-73.6-21.333-92.8-52.267L288,116.267C280.533,103.467,266.667,96,251.733,96
+                                                            c-5.333,0-10.667,1.067-16,3.2l-112,45.867v100.267H166.4v-71.467l37.333-14.933l-33.067,171.733L66.133,310.4L57.6,352
+                                                            c0,0,149.333,28.8,149.333,29.867L227.2,288l45.867,42.667v128h42.667V297.6L272,253.867l12.8-64
+                                                            C312.533,224,354.133,245.333,401.067,245.333z"/>
+                                                    </svg>        
+                                                    <strong class="centerHFlex">CAMINAR</strong>
+                                            </div>
+                                            <div class="containerFlex fitContentW columnFlex flex25 flex50-mb flex50-tb sMarginT">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 530.4" width="56px" height="56px" class="centerHFlex">
+                                                        <path d="M408,40.8a45.9,45.9,0,1,0,45.9,45.9A45.71,45.71,0,0,0,408,40.8Zm77.64,275.41H484.5c-40.09,0-75.36,17.69-98.58,45.84A127.48,127.48,0,0,0,357,443.7a129.59,129.59,0,0,0,9.8,49.84,125.36,125.36,0,0,0,29.68,43.12c22.73,21.51,53.6,34.54,88,34.54,35.52,0,67.26-13.88,90.17-36.64a125.35,125.35,0,0,0,28.67-43.86,130.06,130.06,0,0,0,8.66-47C612,372.68,556.5,316.8,485.64,316.21ZM484.5,525.36a81.66,81.66,0,0,1-81.66-81.66c0-.27,0-.53,0-.8A81.65,81.65,0,0,1,566.11,441c0,.9,0,1.8,0,2.71a81.65,81.65,0,0,1-81.66,81.66ZM402.9,219.3l-33.69-58.52-14.76-25.63c-7.65-12.75-20.4-20.4-38.25-20.4a42.23,42.23,0,0,0-30.6,12.75l-94.35,94.35a42.23,42.23,0,0,0-12.75,30.6c0,15.3,7.65,30.6,20.4,38.25l13.52,8,73.18,43V469.2h45.9V303.45l-.83-.64L275.4,260.1l58.65-58.65,15.19,22.34,10.62,15.61,17.54,25.8H484.5V219.3ZM252.59,418.45a125.56,125.56,0,0,0-68.07-89.21,129.1,129.1,0,0,0-57-13C56.1,316.2,0,372.3,0,443.7a129.59,129.59,0,0,0,9.8,49.84,125.36,125.36,0,0,0,29.68,43.12c22.73,21.51,53.6,34.54,88,34.54,35.52,0,67.26-13.88,90.17-36.64a125.35,125.35,0,0,0,28.67-43.86,130.06,130.06,0,0,0,8.66-47A132.41,132.41,0,0,0,252.59,418.45ZM127.5,525.36A81.66,81.66,0,0,1,45.84,443.7c0-.27,0-.53,0-.8A81.65,81.65,0,0,1,209.11,441c0,.9,0,1.8,0,2.71a81.65,81.65,0,0,1-81.66,81.66Z" transform="translate(0 -40.8)"/>
+                                                    </svg>  
+                                                    <strong class="centerHFlex">BICICLETA</strong>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
 
                                     <div class="buttonsPanel bottomFlex containerFlex wrapFlex">
                                         <div class="flex100-mb containerFlex sMarginT sMarginR noneMarginR-mb">
-                                            <img src="img/getongp.svg" alt="Botón Google Play" class="centerHFlex-mb">
+                                            <img src="img/getongp.svg" alt="Botón Google Play" class="centerHFlex-mb cPointer" onclick="window.open('https://play.google.com/store/apps/details?id=com.rutillastoby.zoria')">
                                         </div>
-                                       <div class="flex100-mb containerFlex sMarginT">
+
+                                       <div class="flex100-mb containerFlex sMarginT" style="display: none;">
                                             <button class="centerHFlex-mb">Más Info ></button>  
                                        </div>
                                                                            
@@ -184,8 +226,8 @@
                             </div>
 
                             <div class="flex30 flex40-tb flex100-mb containerFlex">
-                                <div class="mockup mMarginT-mb">
-                                    <img src="img/zoa-mockup.png" alt="Zoa Mockup" class="width100 ">
+                                <div class="mainImg mMarginT-mb">
+                                    <img src="img/zoamockup.png" alt="Zoa Mockup" class="width100 ">
                                 </div>
                                
                             </div>
@@ -193,35 +235,37 @@
                     </article>
 
                     <!---- WALTER ---->
-                    <article id="projectWalter" class="project mMarginT xlPadding lPadding-mb">
+                    <article id="projectWalter" class="project lMarginT xlPadding lPadding-mb">
                         <div class="logo sMarginT-mb">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.86 162.57">
-                                <path d="M476.72,339.66l61.84,162.57H490.25l-8.64-22.63h-63l-8.87,22.63H361.34l63.54-162.57Zm-40.47,94.81h28.19l-13.86-36.6Z" transform="translate(-53.71 -339.66)"/>
-                                <path d="M291.22,339.66a81.29,81.29,0,0,0-81.28,81.28v81.29h81.28a81.3,81.3,0,0,0,81.29-81.29V339.66Zm0,117.44A36.16,36.16,0,1,1,327.38,421,36.16,36.16,0,0,1,291.22,457.1Z" transform="translate(-53.71 -339.66)"/>
-                                <path d="M195.36,339.67,132.15,457.1h63.21v45.13H53.72l63.2-117.44H53.71V339.66Z" transform="translate(-53.71 -339.66)"/>
-                            </svg>
+                            <img src="img/walterlogo.svg" alt="WALTER" class="logo">
                         </div>
                         <div class="containerFlex wrapFlex">
                             <div class="flex70 flex60-tb flex100-mb mPaddingT">
-                                <div class="containerFlex columnFlex height100 textJustify">
-                                    <span class="mMarginB">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis possimus facere aliquam recusandae asperiores commodi harum, est, eaque iusto sint ut molestias illum libero dolorum labore! Vero exercitationem eum magni.</span>
+                                <div class="containerFlex columnFlex height100">
+                                    <div class="xlMarginB lPaddingR nonePaddingR-mb textJustify textMLine">
+                                        <span>Un nuevo tipo de competición.</span>
+                                    
+
+                                        
+                                    </div>
 
                                     <div class="buttonsPanel bottomFlex containerFlex wrapFlex">
-                                        <div class="flex100-mb containerFlex sMarginT">
-                                            <button class="centerHFlex-mb">Próximamente...</button>  
-                                        </div>
-                                                                            
+
+                                       <div class="flex100-mb containerFlex sMarginT" >
+                                            <button class="centerHFlex-mb cWait noselect">Próximamente...</button>  
+                                       </div>
+                                                                           
                                     </div>
                                 </div>                             
                             </div>
 
-                            <div class="flex30 flex40-tb flex100-mb">
-                                <div class="mockup">
-                                    <img src="img/zoa-mockup.png" alt="Zoa Mockup" class="width100 ">
+                            <div class="flex30 flex40-tb flex100-mb containerFlex">
+                                <div class="mainImg mMarginT-mb">
+                                    <img src="img/walter.png" alt="Zoa Mockup" class="width100 ">
                                 </div>
-                                
+                               
                             </div>
-                        </div>    
+                        </div>
                     </article>
                 </div>
             </section>
@@ -303,11 +347,4 @@
             </div>
         </footer>
     </body>
-    <script>
-        if(window.matchMedia('screen and (max-width: 700px)').matches){
-            $('#menu, header, #banner360').addClass('mini-mb');
-            $('#menu, header, #banner360').addClass('mini');
-            $('html,body').scrollTop(0);
-        }
-    </script>
 </html>

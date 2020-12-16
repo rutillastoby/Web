@@ -19,10 +19,10 @@ body{
     --youtubeColor: rgb(255, 0, 0);
     --facebookColor: rgb(64 100 172);
     --twitterColor:rgb(29, 161, 242);
-    --zoaColor:rgb(255, 217, 0);
+    --zoaColor:#ffeb3b;
     --walterColor:rgb(178, 224, 51);
-    /*mini<->normal header transition*/
-    --miniVelocity:0.5s;
+    /*maxi<->normal header transition*/
+    --maxiVelocity:0.5s;
 }
 *{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -40,37 +40,40 @@ header{
     z-index: 1000;
 }
 header .content{
-    height: 110px;
-    transition: height var(--miniVelocity) ease;
-}
-#topLine{
-    height: 10px;
-    background-color: black;
-    transition: height  var(--miniVelocity) ease;
-}
-#mainLogo{
-    width: 70px;
-    transition: width var(--miniVelocity) ease;
-}
-header.mini-mb .content,
-header.mini-mb #topLine,
-header.mini-mb #mainLogo,
-#menu.mini-mb,
-#banner360.mini-mb{
-    transition: none!important;
-}
-
-header.mini .content{
     height: 50px;
     -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.10);
     box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.10);
+    transition: height var(--maxiVelocity) ease;
 }
-header.mini #topLine{
+#topLine{
     height: 6px;
+    background-color: black;
+    transition: height  var(--maxiVelocity) ease;
 }
-header.mini #mainLogo{
+#mainLogo{
     width: 44px;
+    transition: width var(--maxiVelocity) ease;
+}
+header.maxi-mb .content,
+header.maxi-mb #topLine,
+header.maxi-mb #mainLogo,
+#menu.maxi-mb,
+#banner360.maxi-mb{
+    transition: none!important;
+}
+
+header.maxi .content{
+    height: 110px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+header.maxi #topLine{
+    height: 10px;
+}
+header.maxi #mainLogo{
+    width: 70px;
 }
 
 /******** MENU ********/
@@ -78,15 +81,15 @@ header.mini #mainLogo{
     width: 100%;
     visibility: hidden;
     background-color: rgba(0, 0, 0, 0.65);
-    min-height: calc(100% - 120px);
+    min-height: calc(100% - 56px);
     position: fixed;
-    top:120px;
+    top:56px;
     opacity: 0;
     z-index: 1000;
     transition: opacity 0.28s ease, 
                 visibility 0.28s ease,
-                min-height var(--miniVelocity) ease,
-                top var(--miniVelocity) ease;    
+                min-height var(--maxiVelocity) ease,
+                top var(--maxiVelocity) ease;    
 }
 #menu.open{
     opacity: 1;
@@ -106,9 +109,9 @@ header.mini #mainLogo{
     right: 0;
 }
 
-#menu.mini {
-    min-height: calc(100% - 56px);
-    top:56px;
+#menu.maxi {
+    min-height: calc(100% - 120px);
+    top:120px;
 }
 
 #menu .content img{
@@ -164,7 +167,7 @@ header.mini #mainLogo{
 }
 
 .sectionTitle h1{
-    font-size: 24px;
+    font-size: 25px;
     width: fit-content;
     white-space: nowrap; 
 }
@@ -173,11 +176,11 @@ header.mini #mainLogo{
 #banner360{
     background-color: #000;
     height: 500px;
-    margin-top: 120px;
-    transition: margin-top var(--miniVelocity) ease;
-}
-#banner360.mini{
     margin-top: 56px;
+    transition: margin-top var(--maxiVelocity) ease;
+}
+#banner360.maxi{
+    margin-top: 120px;
 }
 #pano{
     height: 100%;
@@ -209,17 +212,11 @@ header.mini #mainLogo{
     width: 48px;
 }
 
-/******* SEPARADOR ********/
-.sectionSeparator{
-   
-    
-}
-
 /******* PROYECTOS ********/
 #projects .content article{
     border-radius: 16px;
 }
-.project .logo svg{
+.project .logo{
     height: 38px;
 }
 #projects .content article .buttonsPanel button{
@@ -229,31 +226,29 @@ header.mini #mainLogo{
     padding: 0px 38px;
     height: 45px;
 }
-
-#projectWalter{
-    background-color: var(--walterColor);
+.project .mainImg{
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+}
+.project .mainImg img{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50px);
 }
 
 /******* ZOA ********/
 #projectZoa{
     background-color: var(--zoaColor);
 }
-
-#projectZoa .mockup{
-    width: 100%;
-    padding-top: 100%; /* 1:1 Aspect Ratio */
-    position: relative; /* If you want text inside of it */
-}
-#projectZoa .mockup img{
-    position: absolute;
-    bottom: 0;
-    transform: translateY(50px);
-}
-
 #projectZoa .buttonsPanel img{
     height: 45px;
 }
 
+/******* WALTER ********/
+#projectWalter{
+    background-color: var(--walterColor);
+}
 
 /******* CONTACTO ********/
 #contact .content .mail img{
@@ -314,9 +309,12 @@ footer #copyright{
 
 /******* RESPONSIVO *******/
 @media only screen and (max-width: 700px) {
-    /*** BANNER ***/
+    /*** BANNER360 ***/
     #banner360 .content .squareText{
         font-size: 25px;
+    }
+    #banner360{
+        height: 440px;
     }
     /*** MOVIL ***/
     #menu .content{
@@ -329,8 +327,8 @@ footer #copyright{
         margin: 0!important;
     }
 
-    /*** ZOA ***/
-    #projectZoa .mockup img{
+    /*** PROYECTOS ***/
+    .project .mainImg img{
         transform: translateY(30px);
     }
 }
