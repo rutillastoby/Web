@@ -86,6 +86,9 @@ body{
 .flex70{
     flex:70%;
 }
+.flex100{
+    flex:100%;
+}
     
 
 .fixed{
@@ -243,6 +246,15 @@ main{
 .textSemiBold{
     font-weight: 500;
 }
+.noselect {
+    /*Bloquear selecciond del texto*/
+    -webkit-touch-callout: none; 
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none; 
+}
 
 /*********** VISIBILIDAD ***********/
 .showNone{
@@ -255,6 +267,11 @@ main{
 /*********** CURSOR ***********/
 .cPointer{
     cursor: pointer;
+}
+
+/********** IMAGENES **********/
+.imageRound{
+    border-radius: 100px;
 }
 
 /********** BOTONES **********/
