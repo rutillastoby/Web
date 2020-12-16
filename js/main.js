@@ -54,12 +54,22 @@ function toggleMenu(){
     $('#menuTitle').toggleClass('open');    
 }
 
+//-----------------------------------------------------------------
+
+/**
+ * Desplazarse hasta un enlace ancla de la página 
+ * @param anchor = #id
+ */
 function goToAnchor(anchor){
-    var elementScroll = $(anchor).offset();
-    $('html,body').scrollTop(elementScroll.top - (document.documentElement.scrollTop>10?150:50));
+    
+    var elementScroll = $(anchor).offset().top ;
+    //Agregar como margen la altura del navbar
+    if($('header').hasClass('maxi') && anchor=="#know")
+        elementScroll -=135;
+    else
+        elementScroll -=70;
+    $('html,body').scrollTop(elementScroll);
     toggleMenu();
-    console.log(document.documentElement.scrollTop);
-    console.log(document.documentElement.scrollTop>10?150:50);
 }
 
 //-----------------------------------------------------------------

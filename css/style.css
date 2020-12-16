@@ -20,7 +20,7 @@ body{
     --facebookColor: rgb(64 100 172);
     --twitterColor:rgb(29, 161, 242);
     --zoaColor:#ffeb3b;
-    --walterColor:rgb(178, 224, 51);
+    --walterColor:#97ce08;
     /*maxi<->normal header transition*/
     --maxiVelocity:0.5s;
 }
@@ -54,13 +54,6 @@ header .content{
 #mainLogo{
     width: 44px;
     transition: width var(--maxiVelocity) ease;
-}
-header.maxi-mb .content,
-header.maxi-mb #topLine,
-header.maxi-mb #mainLogo,
-#menu.maxi-mb,
-#banner360.maxi-mb{
-    transition: none!important;
 }
 
 header.maxi .content{
@@ -248,6 +241,9 @@ header.maxi #mainLogo{
 /******* WALTER ********/
 #projectWalter{
     background-color: var(--walterColor);
+}
+#projectWalter .mainImg{
+    padding-top: 110%!important;
 }
 
 /******* CONTACTO ********/
