@@ -21,7 +21,7 @@ body{
     --twitterColor:rgb(29, 161, 242);
     --zoaColor:#ffeb3b;
     --walterColor:#97ce08;
-    /*maxi<->normal header transition*/
+    /*normal<->maxi header transition*/
     --maxiVelocity:0.5s;
 }
 *{
